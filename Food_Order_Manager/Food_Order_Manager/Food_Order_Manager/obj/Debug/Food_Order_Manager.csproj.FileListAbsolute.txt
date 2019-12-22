@@ -1,0 +1,16 @@
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.csprojAssemblyReference.cache
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Form_Login.resources
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Properties.Resources.resources
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Select_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Table_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.csproj.GenerateResource.cache
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\bin\Debug\Food_Order_Manager.exe.config
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\bin\Debug\Food_Order_Manager.exe
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\bin\Debug\Food_Order_Manager.pdb
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\bin\Debug\DataAccessLayer.dll
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\bin\Debug\DataAccessLayer.pdb
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.csproj.CopyComplete
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.exe
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.pdb
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.POS.resources
+D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Table.resources
