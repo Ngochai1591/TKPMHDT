@@ -29,30 +29,30 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Table_Form));
-            this.pos1 = new Food_Order_Manager.userControl.POS();
             this.flp_tableList = new System.Windows.Forms.FlowLayoutPanel();
+            this.pos1 = new Food_Order_Manager.userControl.POS();
             this.SuspendLayout();
-            // 
-            // pos1
-            // 
-            this.pos1.Location = new System.Drawing.Point(-3, 579);
-            this.pos1.Name = "pos1";
-            this.pos1.Size = new System.Drawing.Size(150, 150);
-            this.pos1.TabIndex = 0;
             // 
             // flp_tableList
             // 
-            this.flp_tableList.Location = new System.Drawing.Point(12, 12);
+            this.flp_tableList.Location = new System.Drawing.Point(-3, 12);
             this.flp_tableList.Name = "flp_tableList";
-            this.flp_tableList.Size = new System.Drawing.Size(1326, 561);
+            this.flp_tableList.Size = new System.Drawing.Size(1352, 561);
             this.flp_tableList.TabIndex = 1;
+            // 
+            // pos1
+            // 
+            this.pos1.Location = new System.Drawing.Point(-3, 564);
+            this.pos1.Name = "pos1";
+            this.pos1.Size = new System.Drawing.Size(150, 150);
+            this.pos1.TabIndex = 0;
             // 
             // Table_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1350, 711);
             this.Controls.Add(this.flp_tableList);
             this.Controls.Add(this.pos1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

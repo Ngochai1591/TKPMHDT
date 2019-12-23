@@ -33,9 +33,14 @@ namespace Food_Order_Manager
                 for(int i =0;i<tableList.Tables[0].Rows.Count;i++)
                 {
                     Table tableUC = new Table();
-                    tableUC.TABLEID = tableList.Tables[0].Rows[i][0].ToString();
-                    tableUC.TABLENAME = tableList.Tables[0].Rows[i][1].ToString();
+                    tableUC.TABLEID = tableList.Tables[0].Rows[i][1].ToString();
+                    tableUC.TABLENAME = tableList.Tables[0].Rows[i][0].ToString();
                     flp_tableList.Controls.Add(tableUC);
+
+                    tableUC.Click += (sender, args) =>
+                     {
+
+                     };
                 }
             }
         }

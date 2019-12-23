@@ -39,7 +39,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(130, 111);
+            this.pictureBox1.Size = new System.Drawing.Size(183, 157);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
@@ -48,7 +48,7 @@
             // 
             this.lb_tableName.AutoSize = true;
             this.lb_tableName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_tableName.Location = new System.Drawing.Point(37, 114);
+            this.lb_tableName.Location = new System.Drawing.Point(63, 160);
             this.lb_tableName.Name = "lb_tableName";
             this.lb_tableName.Size = new System.Drawing.Size(55, 20);
             this.lb_tableName.TabIndex = 1;
@@ -61,7 +61,7 @@
             this.Controls.Add(this.lb_tableName);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Table";
-            this.Size = new System.Drawing.Size(130, 135);
+            this.Size = new System.Drawing.Size(186, 201);
             this.Load += new System.EventHandler(this.Table_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
