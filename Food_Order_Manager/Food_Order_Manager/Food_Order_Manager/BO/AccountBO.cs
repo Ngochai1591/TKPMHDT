@@ -25,5 +25,21 @@ namespace Food_Order_Manager.BO
             result = data.GetDataSet(sql, para);
             return result;
         }
+
+        public int SignUp(AccountDTO dto)
+        {
+            int result = -1;
+            string sql = "INSERT INTO Account VALUES (@Username, @Password, @Name, @Position)";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@Username", dto.Username),
+                new SqlParameter("Password", dto.Password),
+                new SqlParameter("@Name",dto.Name),
+                new SqlParameter("@Position",dto.Position)
+            };
+            DataAccess data = new DataAccess();
+            result = data.Execute(sql, para);
+            return result;
+        }
     }
 }

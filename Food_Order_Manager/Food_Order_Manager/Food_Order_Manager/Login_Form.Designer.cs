@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.linkSignUp = new System.Windows.Forms.LinkLabel();
-            this.linkForgotPass = new System.Windows.Forms.LinkLabel();
             this.btnSignin = new System.Windows.Forms.Button();
+            this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
+            this.linkForgotPass = new System.Windows.Forms.LinkLabel();
+            this.linkSignUp = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtUserName = new System.Windows.Forms.TextBox();
             this.txtPassWord = new System.Windows.Forms.TextBox();
+            this.txtUserName = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3.SuspendLayout();
@@ -62,6 +62,20 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(435, 118);
             this.tableLayoutPanel3.TabIndex = 3;
             // 
+            // btnSignin
+            // 
+            this.btnSignin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSignin.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnSignin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignin.Location = new System.Drawing.Point(132, 7);
+            this.btnSignin.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSignin.Name = "btnSignin";
+            this.btnSignin.Size = new System.Drawing.Size(170, 45);
+            this.btnSignin.TabIndex = 3;
+            this.btnSignin.Text = "Đăng nhập";
+            this.btnSignin.UseVisualStyleBackColor = false;
+            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
+            // 
             // tableLayoutPanel4
             // 
             this.tableLayoutPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -81,6 +95,18 @@
             this.tableLayoutPanel4.Size = new System.Drawing.Size(427, 51);
             this.tableLayoutPanel4.TabIndex = 1;
             // 
+            // linkForgotPass
+            // 
+            this.linkForgotPass.AutoSize = true;
+            this.linkForgotPass.Dock = System.Windows.Forms.DockStyle.Left;
+            this.linkForgotPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkForgotPass.Location = new System.Drawing.Point(216, 0);
+            this.linkForgotPass.Name = "linkForgotPass";
+            this.linkForgotPass.Size = new System.Drawing.Size(122, 51);
+            this.linkForgotPass.TabIndex = 0;
+            this.linkForgotPass.TabStop = true;
+            this.linkForgotPass.Text = "Quên mật khẩu";
+            // 
             // linkSignUp
             // 
             this.linkSignUp.AutoSize = true;
@@ -92,32 +118,7 @@
             this.linkSignUp.TabIndex = 0;
             this.linkSignUp.TabStop = true;
             this.linkSignUp.Text = "Đăng ký tài khoản";
-            // 
-            // linkForgotPass
-            // 
-            this.linkForgotPass.AutoSize = true;
-            this.linkForgotPass.Dock = System.Windows.Forms.DockStyle.Left;
-            this.linkForgotPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkForgotPass.Location = new System.Drawing.Point(216, 0);
-            this.linkForgotPass.Name = "linkForgotPass";
-            this.linkForgotPass.Size = new System.Drawing.Size(122, 51);
-            this.linkForgotPass.TabIndex = 1;
-            this.linkForgotPass.TabStop = true;
-            this.linkForgotPass.Text = "Quên mật khẩu";
-            // 
-            // btnSignin
-            // 
-            this.btnSignin.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSignin.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnSignin.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSignin.Location = new System.Drawing.Point(132, 7);
-            this.btnSignin.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSignin.Name = "btnSignin";
-            this.btnSignin.Size = new System.Drawing.Size(170, 45);
-            this.btnSignin.TabIndex = 2;
-            this.btnSignin.Text = "Đăng nhập";
-            this.btnSignin.UseVisualStyleBackColor = false;
-            this.btnSignin.Click += new System.EventHandler(this.btnSignin_Click);
+            this.linkSignUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkSignUp_LinkClicked);
             // 
             // tableLayoutPanel2
             // 
@@ -138,17 +139,26 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(435, 113);
             this.tableLayoutPanel2.TabIndex = 2;
             // 
-            // label2
+            // txtPassWord
             // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(209, 56);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tên đăng nhập";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.txtPassWord.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassWord.Location = new System.Drawing.Point(221, 68);
+            this.txtPassWord.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassWord.Name = "txtPassWord";
+            this.txtPassWord.PasswordChar = '*';
+            this.txtPassWord.Size = new System.Drawing.Size(210, 32);
+            this.txtPassWord.TabIndex = 2;
+            // 
+            // txtUserName
+            // 
+            this.txtUserName.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUserName.Location = new System.Drawing.Point(221, 12);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
+            this.txtUserName.Name = "txtUserName";
+            this.txtUserName.Size = new System.Drawing.Size(210, 32);
+            this.txtUserName.TabIndex = 1;
             // 
             // label3
             // 
@@ -162,26 +172,17 @@
             this.label3.Text = "Mật khẩu";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // txtUserName
+            // label2
             // 
-            this.txtUserName.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtUserName.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUserName.Location = new System.Drawing.Point(221, 12);
-            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
-            this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(210, 32);
-            this.txtUserName.TabIndex = 0;
-            // 
-            // txtPassWord
-            // 
-            this.txtPassWord.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtPassWord.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassWord.Location = new System.Drawing.Point(221, 68);
-            this.txtPassWord.Margin = new System.Windows.Forms.Padding(4);
-            this.txtPassWord.Name = "txtPassWord";
-            this.txtPassWord.PasswordChar = '*';
-            this.txtPassWord.Size = new System.Drawing.Size(210, 32);
-            this.txtPassWord.TabIndex = 1;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(4, 0);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(209, 56);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên đăng nhập";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // tableLayoutPanel1
             // 

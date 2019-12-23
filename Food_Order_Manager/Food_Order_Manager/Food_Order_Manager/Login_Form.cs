@@ -51,5 +51,13 @@ namespace Food_Order_Manager
                 }
             }
         }
+
+        private void linkSignUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Register_Form f = new Register_Form();
+            this.Hide();
+            f.ShowDialog();
+            this.Close();
+        }
     }
 }
