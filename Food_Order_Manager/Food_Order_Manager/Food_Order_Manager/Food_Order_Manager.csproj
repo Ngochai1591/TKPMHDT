@@ -50,7 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BO\tableDO.cs" />
+    <Compile Include="BO\tableBO.cs" />
     <Compile Include="DTO\tableDTO.cs" />
     <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>

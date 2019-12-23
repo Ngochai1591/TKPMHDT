@@ -21,16 +21,22 @@ namespace Food_Order_Manager
 
         private void Table_Form_Load(object sender, EventArgs e)
         {
-
+            tableLoading();
         }
 
         private void tableLoading()
         {
-            tableDO table = new tableDO();
+            tableBO table = new tableBO();
             DataSet tableList = table.getAllTable();
             if (tableList.Tables[0].Rows.Count > 0 && tableList.Tables.Count>0)
             {
-
+                for(int i =0;i<tableList.Tables[0].Rows.Count;i++)
+                {
+                    Table tableUC = new Table();
+                    tableUC.TABLEID = tableList.Tables[0].Rows[i][0].ToString();
+                    tableUC.TABLENAME = tableList.Tables[0].Rows[i][1].ToString();
+                    flp_tableList.Controls.Add(tableUC);
+                }
             }
         }
 

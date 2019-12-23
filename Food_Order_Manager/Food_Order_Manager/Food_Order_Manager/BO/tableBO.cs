@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 using DataAccessLayer;
 namespace Food_Order_Manager.BO
 {
-    class tableDO
+    class tableBO
     {
         public DataSet getAllTable()
         {

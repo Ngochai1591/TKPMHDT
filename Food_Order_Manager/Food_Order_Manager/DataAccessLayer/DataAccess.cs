@@ -26,8 +26,9 @@ namespace DataAccessLayer
 
             connectionBuilder.DataSource = ConfigurationSettings.AppSettings["Server"];
             connectionBuilder.InitialCatalog = ConfigurationSettings.AppSettings["Database"];
-            connectionBuilder.UserID = ConfigurationSettings.AppSettings["UserID"];
-            connectionBuilder.Password = ConfigurationSettings.AppSettings["Password"];
+            //connectionBuilder.UserID = ConfigurationSettings.AppSettings["UserID"];
+            //connectionBuilder.Password = ConfigurationSettings.AppSettings["Password"];
+            connectionBuilder.IntegratedSecurity = true;
 
             connection = new SqlConnection(connectionBuilder.ConnectionString);
 

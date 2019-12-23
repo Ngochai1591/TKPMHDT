@@ -8,3 +8,8 @@ D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\DataAccess
 D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
 D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 D:\BaiTap\TKPMHDT\Final_Project\Food_Order_Manager\Food_Order_Manager\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\DataAccessLayer\obj\Debug\DataAccessLayer.csprojAssemblyReference.cache
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
