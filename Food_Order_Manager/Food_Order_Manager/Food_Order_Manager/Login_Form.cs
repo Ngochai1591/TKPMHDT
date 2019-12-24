@@ -18,7 +18,10 @@ namespace Food_Order_Manager
         {
             InitializeComponent();
         }
-       
+
+        public static string USERNAME = "";
+        public static string POSITION = "";
+        public static string NAME = "";
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -40,6 +43,9 @@ namespace Food_Order_Manager
                 DataSet dataSet = bo.SignIn(dto);
                 if(dataSet.Tables[0].Rows.Count>0 && dataSet.Tables.Count>0)
                 {
+                    USERNAME = dataSet.Tables[0].Rows[0][0].ToString();
+                    NAME = dataSet.Tables[0].Rows[0][2].ToString();
+                    POSITION = dataSet.Tables[0].Rows[0][3].ToString();
                     Table_Form table = new Table_Form();
                     this.Hide();
                     table.ShowDialog();

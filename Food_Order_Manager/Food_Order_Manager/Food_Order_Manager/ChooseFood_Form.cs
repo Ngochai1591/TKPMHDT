@@ -19,7 +19,7 @@ namespace Food_Order_Manager
             {
                 tableName = value;
             }
-        };
+        }
 
         private string tableName;
 
