@@ -21,9 +21,14 @@ namespace Food_Order_Manager
 
         private void Table_Form_Load(object sender, EventArgs e)
         {
+            userLoading();
             tableLoading();
         }
 
+        private void userLoading()
+        {
+            lb_Name.Text =  Login_Form.NAME; 
+        }
         private void tableLoading()
         {
             tableBO table = new tableBO();

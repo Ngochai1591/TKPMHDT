@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Food_Order_Manager
 {
-    public partial class Select_Form : Form
+    public partial class Menu_Form : Form
     {
-        public Select_Form()
+        public Menu_Form()
         {
             InitializeComponent();
         }
