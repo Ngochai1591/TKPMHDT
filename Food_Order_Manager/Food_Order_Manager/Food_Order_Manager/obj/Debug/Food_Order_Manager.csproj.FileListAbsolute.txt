@@ -53,7 +53,6 @@ C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.csprojAssemblyReference.cache
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Login_Form.resources
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Properties.Resources.resources
-C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Select_Form.resources
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.POS.resources
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Table.resources
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Table_Form.resources
@@ -141,3 +140,4 @@ F:\WorkSpace_OOSD\Project_Final\Food_Order_Manager\Food_Order_Manager\Food_Order
 F:\WorkSpace_OOSD\Project_Final\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.csproj.CopyComplete
 F:\WorkSpace_OOSD\Project_Final\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.exe
 F:\WorkSpace_OOSD\Project_Final\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.pdb
+C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.ManageEmploy_Form.resources
