@@ -15,7 +15,7 @@ namespace Food_Order_Manager
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ManageEmploy_Form());
+            Application.Run(new Category_Form());
         }
     }
 }

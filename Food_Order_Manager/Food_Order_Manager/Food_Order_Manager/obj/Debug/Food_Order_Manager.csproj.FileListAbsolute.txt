@@ -141,3 +141,8 @@ F:\WorkSpace_OOSD\Project_Final\Food_Order_Manager\Food_Order_Manager\Food_Order
 F:\WorkSpace_OOSD\Project_Final\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.exe
 F:\WorkSpace_OOSD\Project_Final\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.pdb
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.ManageEmploy_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.ManageEmploy_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Menu_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Add_Category_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Category_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Edit_Category_Form.resources

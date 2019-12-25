@@ -16,5 +16,58 @@ namespace Food_Order_Manager
         {
             InitializeComponent();
         }
+        //table id
+        private string tableId;
+        public string TABLEID
+        {
+            set
+            {
+                tableId = value;
+            }
+            get
+            {
+                return tableId;
+            }
+        }
+        //table name
+        private string tableName;
+        public string TABLENAME
+        {
+            set
+            {
+                tableName = value;
+            }
+            get
+            {
+                return tableName;
+            }
+        }
+
+
+        private void Menu_Form_Load(object sender, EventArgs e)
+        {
+            loadingMenu();
+        }
+
+        private void loadingMenu()
+        {
+            txt_TableName.Text = tableName;
+            txt_Name.Text = Login_Form.NAME;
+            loadingFood();
+        }
+
+        private void loadingFood()
+        {
+
+        }
+        
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            Table_Form table = new Table_Form();
+            this.Hide();
+            table.ShowDialog();
+            this.Close();
+        }
     }
 }

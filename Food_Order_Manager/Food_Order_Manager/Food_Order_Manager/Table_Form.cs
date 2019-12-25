@@ -42,14 +42,29 @@ namespace Food_Order_Manager
                     tableUC.TABLENAME = tableList.Tables[0].Rows[i][0].ToString();
                     flp_tableList.Controls.Add(tableUC);
 
-                    tableUC.Click += (sender, args) =>
-                     {
-
-                     };
+                    foreach(Control con in tableUC.Controls)
+                    {
+                        con.Click += (sender, e) =>
+                        {
+                            openMenuForm(sender, e, tableUC.TABLEID, tableUC.TABLENAME);
+                        };
+                    }
                 }
             }
         }
 
+        private void openMenuForm(object sender, EventArgs e, string tableId, string tableName)
+        {
+            Menu_Form menu = new Menu_Form();
+            menu.TABLEID = tableId;
+            menu.TABLENAME = tableName;
+            this.Hide();
+            menu.ShowDialog();
+            this.Close();
+        }
+        private void btn_Logout_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
