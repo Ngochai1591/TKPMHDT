@@ -12,5 +12,9 @@ namespace Food_Order_Manager.DTO
         public string Password;
         public string Name;
         public string Position;
+        public string Sex;
+        public string DOB;
+        public string Address;
+        public string NumberPhone;
     }
 }

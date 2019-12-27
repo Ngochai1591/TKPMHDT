@@ -29,168 +29,129 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ManageEmploy_Form));
-            this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NamSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvthongtinnv = new System.Windows.Forms.DataGridView();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgv_Thongtinnv = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cmbgioitinh = new System.Windows.Forms.ComboBox();
-            this.dtpnamsinh = new System.Windows.Forms.DateTimePicker();
-            this.txtsdt = new System.Windows.Forms.TextBox();
-            this.txtdiachi = new System.Windows.Forms.TextBox();
-            this.txtten = new System.Windows.Forms.TextBox();
-            this.txtmanv = new System.Windows.Forms.TextBox();
+            this.cmb_Sex = new System.Windows.Forms.ComboBox();
+            this.dt_DOB = new System.Windows.Forms.DateTimePicker();
+            this.txt_NumberPhone = new System.Windows.Forms.TextBox();
+            this.txt_Address = new System.Windows.Forms.TextBox();
+            this.txt_Name = new System.Windows.Forms.TextBox();
+            this.txt_UsernameNV = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnthoat = new System.Windows.Forms.Button();
-            this.btnthem = new System.Windows.Forms.Button();
-            this.btnhuy = new System.Windows.Forms.Button();
-            this.btnxoa = new System.Windows.Forms.Button();
-            this.btnluu = new System.Windows.Forms.Button();
-            this.btnsua = new System.Windows.Forms.Button();
+            this.btn_Exit = new System.Windows.Forms.Button();
+            this.btn_Add = new System.Windows.Forms.Button();
+            this.btn_Cancel = new System.Windows.Forms.Button();
+            this.btn_Edit = new System.Windows.Forms.Button();
+            this.btn_Save = new System.Windows.Forms.Button();
+            this.btn_Delete = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvthongtinnv)).BeginInit();
+            this.cmb_Position = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_Password = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Thongtinnv)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // SDT
+            // dgv_Thongtinnv
             // 
-            this.SDT.DataPropertyName = "SDT";
-            this.SDT.HeaderText = "Số Điện Thoại";
-            this.SDT.Name = "SDT";
-            // 
-            // NamSinh
-            // 
-            this.NamSinh.DataPropertyName = "NamSinh";
-            this.NamSinh.HeaderText = "Năm Sinh";
-            this.NamSinh.Name = "NamSinh";
-            // 
-            // GT
-            // 
-            this.GT.DataPropertyName = "GioiTinh";
-            this.GT.HeaderText = "Giới Tính";
-            this.GT.Name = "GT";
-            // 
-            // TenNV
-            // 
-            this.TenNV.DataPropertyName = "TenNV";
-            this.TenNV.HeaderText = "Tên Nhân Viên";
-            this.TenNV.Name = "TenNV";
-            // 
-            // Ma
-            // 
-            this.Ma.DataPropertyName = "MaNV";
-            this.Ma.HeaderText = "Mã Nhân Viên";
-            this.Ma.Name = "Ma";
-            // 
-            // dgvthongtinnv
-            // 
-            this.dgvthongtinnv.AllowUserToOrderColumns = true;
-            this.dgvthongtinnv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvthongtinnv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvthongtinnv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Ma,
-            this.TenNV,
-            this.GT,
-            this.NamSinh,
-            this.DiaChi,
-            this.SDT});
-            this.dgvthongtinnv.Location = new System.Drawing.Point(59, 23);
-            this.dgvthongtinnv.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvthongtinnv.Name = "dgvthongtinnv";
-            this.dgvthongtinnv.Size = new System.Drawing.Size(1013, 218);
-            this.dgvthongtinnv.TabIndex = 0;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.DataPropertyName = "DiaChi";
-            this.DiaChi.HeaderText = "Địa Chỉ";
-            this.DiaChi.Name = "DiaChi";
+            this.dgv_Thongtinnv.AllowUserToAddRows = false;
+            this.dgv_Thongtinnv.AllowUserToDeleteRows = false;
+            this.dgv_Thongtinnv.AllowUserToOrderColumns = true;
+            this.dgv_Thongtinnv.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgv_Thongtinnv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_Thongtinnv.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            this.dgv_Thongtinnv.Location = new System.Drawing.Point(23, 46);
+            this.dgv_Thongtinnv.Margin = new System.Windows.Forms.Padding(4);
+            this.dgv_Thongtinnv.Name = "dgv_Thongtinnv";
+            this.dgv_Thongtinnv.ReadOnly = true;
+            this.dgv_Thongtinnv.Size = new System.Drawing.Size(1062, 191);
+            this.dgv_Thongtinnv.TabIndex = 0;
+            this.dgv_Thongtinnv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Thongtinnv_CellClick);
+            this.dgv_Thongtinnv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Thongtinnv_CellContentClick);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.dgvthongtinnv);
-            this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.ForeColor = System.Drawing.Color.Maroon;
-            this.groupBox3.Location = new System.Drawing.Point(69, 480);
+            this.groupBox3.Controls.Add(this.dgv_Thongtinnv);
+            this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.groupBox3.ForeColor = System.Drawing.Color.Black;
+            this.groupBox3.Location = new System.Drawing.Point(68, 511);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(1108, 249);
+            this.groupBox3.Size = new System.Drawing.Size(1108, 262);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Dánh Sách Thông Tin Nhân Viên";
             // 
-            // cmbgioitinh
+            // cmb_Sex
             // 
-            this.cmbgioitinh.Enabled = false;
-            this.cmbgioitinh.FormattingEnabled = true;
-            this.cmbgioitinh.Location = new System.Drawing.Point(791, 49);
-            this.cmbgioitinh.Margin = new System.Windows.Forms.Padding(4);
-            this.cmbgioitinh.Name = "cmbgioitinh";
-            this.cmbgioitinh.Size = new System.Drawing.Size(280, 36);
-            this.cmbgioitinh.TabIndex = 4;
+            this.cmb_Sex.Enabled = false;
+            this.cmb_Sex.FormattingEnabled = true;
+            this.cmb_Sex.Location = new System.Drawing.Point(791, 49);
+            this.cmb_Sex.Margin = new System.Windows.Forms.Padding(4);
+            this.cmb_Sex.Name = "cmb_Sex";
+            this.cmb_Sex.Size = new System.Drawing.Size(280, 36);
+            this.cmb_Sex.TabIndex = 5;
             // 
-            // dtpnamsinh
+            // dt_DOB
             // 
-            this.dtpnamsinh.Enabled = false;
-            this.dtpnamsinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpnamsinh.Location = new System.Drawing.Point(791, 112);
-            this.dtpnamsinh.Margin = new System.Windows.Forms.Padding(4);
-            this.dtpnamsinh.Name = "dtpnamsinh";
-            this.dtpnamsinh.Size = new System.Drawing.Size(280, 34);
-            this.dtpnamsinh.TabIndex = 5;
+            this.dt_DOB.Enabled = false;
+            this.dt_DOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dt_DOB.Location = new System.Drawing.Point(791, 112);
+            this.dt_DOB.Margin = new System.Windows.Forms.Padding(4);
+            this.dt_DOB.Name = "dt_DOB";
+            this.dt_DOB.Size = new System.Drawing.Size(280, 34);
+            this.dt_DOB.TabIndex = 6;
             // 
-            // txtsdt
+            // txt_NumberPhone
             // 
-            this.txtsdt.Enabled = false;
-            this.txtsdt.Location = new System.Drawing.Point(791, 172);
-            this.txtsdt.Margin = new System.Windows.Forms.Padding(4);
-            this.txtsdt.Name = "txtsdt";
-            this.txtsdt.Size = new System.Drawing.Size(280, 34);
-            this.txtsdt.TabIndex = 6;
+            this.txt_NumberPhone.Enabled = false;
+            this.txt_NumberPhone.Location = new System.Drawing.Point(791, 236);
+            this.txt_NumberPhone.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_NumberPhone.Name = "txt_NumberPhone";
+            this.txt_NumberPhone.Size = new System.Drawing.Size(280, 34);
+            this.txt_NumberPhone.TabIndex = 8;
             // 
-            // txtdiachi
+            // txt_Address
             // 
-            this.txtdiachi.Enabled = false;
-            this.txtdiachi.Location = new System.Drawing.Point(249, 178);
-            this.txtdiachi.Margin = new System.Windows.Forms.Padding(4);
-            this.txtdiachi.Name = "txtdiachi";
-            this.txtdiachi.Size = new System.Drawing.Size(277, 34);
-            this.txtdiachi.TabIndex = 3;
+            this.txt_Address.Enabled = false;
+            this.txt_Address.Location = new System.Drawing.Point(270, 238);
+            this.txt_Address.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Address.Name = "txt_Address";
+            this.txt_Address.Size = new System.Drawing.Size(277, 34);
+            this.txt_Address.TabIndex = 4;
             // 
-            // txtten
+            // txt_Name
             // 
-            this.txtten.Enabled = false;
-            this.txtten.Location = new System.Drawing.Point(249, 116);
-            this.txtten.Margin = new System.Windows.Forms.Padding(4);
-            this.txtten.Name = "txtten";
-            this.txtten.Size = new System.Drawing.Size(277, 34);
-            this.txtten.TabIndex = 2;
+            this.txt_Name.Enabled = false;
+            this.txt_Name.Location = new System.Drawing.Point(270, 119);
+            this.txt_Name.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Name.Name = "txt_Name";
+            this.txt_Name.Size = new System.Drawing.Size(277, 34);
+            this.txt_Name.TabIndex = 2;
             // 
-            // txtmanv
+            // txt_UsernameNV
             // 
-            this.txtmanv.Enabled = false;
-            this.txtmanv.Location = new System.Drawing.Point(249, 55);
-            this.txtmanv.Margin = new System.Windows.Forms.Padding(4);
-            this.txtmanv.Name = "txtmanv";
-            this.txtmanv.Size = new System.Drawing.Size(277, 34);
-            this.txtmanv.TabIndex = 1;
+            this.txt_UsernameNV.Enabled = false;
+            this.txt_UsernameNV.Location = new System.Drawing.Point(270, 58);
+            this.txt_UsernameNV.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_UsernameNV.Name = "txt_UsernameNV";
+            this.txt_UsernameNV.Size = new System.Drawing.Size(277, 34);
+            this.txt_UsernameNV.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 182);
+            this.label2.Location = new System.Drawing.Point(57, 239);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 28);
@@ -200,7 +161,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(616, 176);
+            this.label6.Location = new System.Drawing.Point(616, 238);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 28);
@@ -243,96 +204,100 @@
             this.label1.Location = new System.Drawing.Point(57, 59);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(141, 28);
+            this.label1.Size = new System.Drawing.Size(205, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Mã Nhân Viên";
+            this.label1.Text = "Tài Khoản Nhân Viên";
             // 
-            // btnthoat
+            // btn_Exit
             // 
-            this.btnthoat.BackColor = System.Drawing.Color.Red;
-            this.btnthoat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthoat.BackgroundImage")));
-            this.btnthoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnthoat.Enabled = false;
-            this.btnthoat.Location = new System.Drawing.Point(953, 20);
-            this.btnthoat.Margin = new System.Windows.Forms.Padding(4);
-            this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(132, 92);
-            this.btnthoat.TabIndex = 5;
-            this.btnthoat.UseVisualStyleBackColor = false;
-            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
+            this.btn_Exit.BackColor = System.Drawing.Color.Red;
+            this.btn_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Exit.BackgroundImage")));
+            this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Exit.Enabled = false;
+            this.btn_Exit.Location = new System.Drawing.Point(953, 20);
+            this.btn_Exit.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Exit.Name = "btn_Exit";
+            this.btn_Exit.Size = new System.Drawing.Size(132, 92);
+            this.btn_Exit.TabIndex = 14;
+            this.btn_Exit.UseVisualStyleBackColor = false;
+            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
-            // btnthem
+            // btn_Add
             // 
-            this.btnthem.BackColor = System.Drawing.Color.Green;
-            this.btnthem.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnthem.BackgroundImage")));
-            this.btnthem.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnthem.Location = new System.Drawing.Point(23, 20);
-            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
-            this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(132, 92);
-            this.btnthem.TabIndex = 1;
-            this.btnthem.UseVisualStyleBackColor = false;
+            this.btn_Add.BackColor = System.Drawing.Color.Green;
+            this.btn_Add.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Add.BackgroundImage")));
+            this.btn_Add.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Add.Location = new System.Drawing.Point(23, 20);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(132, 92);
+            this.btn_Add.TabIndex = 9;
+            this.btn_Add.UseVisualStyleBackColor = false;
+            this.btn_Add.Click += new System.EventHandler(this.btnthem_Click);
             // 
-            // btnhuy
+            // btn_Cancel
             // 
-            this.btnhuy.BackColor = System.Drawing.Color.Indigo;
-            this.btnhuy.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnhuy.BackgroundImage")));
-            this.btnhuy.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnhuy.Enabled = false;
-            this.btnhuy.Location = new System.Drawing.Point(775, 20);
-            this.btnhuy.Margin = new System.Windows.Forms.Padding(4);
-            this.btnhuy.Name = "btnhuy";
-            this.btnhuy.Size = new System.Drawing.Size(132, 92);
-            this.btnhuy.TabIndex = 4;
-            this.btnhuy.UseVisualStyleBackColor = false;
-            this.btnhuy.Click += new System.EventHandler(this.btnhuy_Click);
+            this.btn_Cancel.BackColor = System.Drawing.Color.Indigo;
+            this.btn_Cancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.BackgroundImage")));
+            this.btn_Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Cancel.Enabled = false;
+            this.btn_Cancel.Location = new System.Drawing.Point(775, 20);
+            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Cancel.Name = "btn_Cancel";
+            this.btn_Cancel.Size = new System.Drawing.Size(132, 92);
+            this.btn_Cancel.TabIndex = 13;
+            this.btn_Cancel.UseVisualStyleBackColor = false;
+            this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
             // 
-            // btnxoa
+            // btn_Edit
             // 
-            this.btnxoa.BackColor = System.Drawing.Color.Purple;
-            this.btnxoa.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnxoa.BackgroundImage")));
-            this.btnxoa.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnxoa.Location = new System.Drawing.Point(221, 20);
-            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
-            this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(132, 92);
-            this.btnxoa.TabIndex = 2;
-            this.btnxoa.UseVisualStyleBackColor = false;
+            this.btn_Edit.BackColor = System.Drawing.Color.Purple;
+            this.btn_Edit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Edit.BackgroundImage")));
+            this.btn_Edit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Edit.Location = new System.Drawing.Point(221, 20);
+            this.btn_Edit.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Edit.Name = "btn_Edit";
+            this.btn_Edit.Size = new System.Drawing.Size(132, 92);
+            this.btn_Edit.TabIndex = 10;
+            this.btn_Edit.UseVisualStyleBackColor = false;
+            this.btn_Edit.Click += new System.EventHandler(this.btn_Edit_Click);
             // 
-            // btnluu
+            // btn_Save
             // 
-            this.btnluu.BackColor = System.Drawing.Color.Blue;
-            this.btnluu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnluu.BackgroundImage")));
-            this.btnluu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnluu.Enabled = false;
-            this.btnluu.Location = new System.Drawing.Point(592, 20);
-            this.btnluu.Margin = new System.Windows.Forms.Padding(4);
-            this.btnluu.Name = "btnluu";
-            this.btnluu.Size = new System.Drawing.Size(132, 92);
-            this.btnluu.TabIndex = 3;
-            this.btnluu.UseVisualStyleBackColor = false;
+            this.btn_Save.BackColor = System.Drawing.Color.Blue;
+            this.btn_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Save.BackgroundImage")));
+            this.btn_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Save.Enabled = false;
+            this.btn_Save.Location = new System.Drawing.Point(592, 20);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(132, 92);
+            this.btn_Save.TabIndex = 12;
+            this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
-            // btnsua
+            // btn_Delete
             // 
-            this.btnsua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.btnsua.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnsua.BackgroundImage")));
-            this.btnsua.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnsua.Location = new System.Drawing.Point(415, 20);
-            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
-            this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(132, 92);
-            this.btnsua.TabIndex = 2;
-            this.btnsua.UseVisualStyleBackColor = false;
+            this.btn_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.btn_Delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Delete.BackgroundImage")));
+            this.btn_Delete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Delete.Location = new System.Drawing.Point(415, 20);
+            this.btn_Delete.Margin = new System.Windows.Forms.Padding(4);
+            this.btn_Delete.Name = "btn_Delete";
+            this.btn_Delete.Size = new System.Drawing.Size(132, 92);
+            this.btn_Delete.TabIndex = 11;
+            this.btn_Delete.UseVisualStyleBackColor = false;
+            this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.btnthoat);
-            this.groupBox2.Controls.Add(this.btnthem);
-            this.groupBox2.Controls.Add(this.btnhuy);
-            this.groupBox2.Controls.Add(this.btnxoa);
-            this.groupBox2.Controls.Add(this.btnluu);
-            this.groupBox2.Controls.Add(this.btnsua);
-            this.groupBox2.Location = new System.Drawing.Point(69, 323);
+            this.groupBox2.Controls.Add(this.btn_Exit);
+            this.groupBox2.Controls.Add(this.btn_Add);
+            this.groupBox2.Controls.Add(this.btn_Cancel);
+            this.groupBox2.Controls.Add(this.btn_Edit);
+            this.groupBox2.Controls.Add(this.btn_Save);
+            this.groupBox2.Controls.Add(this.btn_Delete);
+            this.groupBox2.Location = new System.Drawing.Point(68, 354);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
@@ -342,12 +307,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.cmbgioitinh);
-            this.groupBox1.Controls.Add(this.dtpnamsinh);
-            this.groupBox1.Controls.Add(this.txtsdt);
-            this.groupBox1.Controls.Add(this.txtdiachi);
-            this.groupBox1.Controls.Add(this.txtten);
-            this.groupBox1.Controls.Add(this.txtmanv);
+            this.groupBox1.Controls.Add(this.cmb_Position);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Controls.Add(this.txt_Password);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.cmb_Sex);
+            this.groupBox1.Controls.Add(this.dt_DOB);
+            this.groupBox1.Controls.Add(this.txt_NumberPhone);
+            this.groupBox1.Controls.Add(this.txt_Address);
+            this.groupBox1.Controls.Add(this.txt_Name);
+            this.groupBox1.Controls.Add(this.txt_UsernameNV);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
@@ -356,14 +325,53 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.groupBox1.Location = new System.Drawing.Point(69, 38);
+            this.groupBox1.Location = new System.Drawing.Point(68, 22);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1108, 255);
+            this.groupBox1.Size = new System.Drawing.Size(1108, 297);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Nhân Viên";
+            // 
+            // cmb_Position
+            // 
+            this.cmb_Position.Enabled = false;
+            this.cmb_Position.FormattingEnabled = true;
+            this.cmb_Position.Location = new System.Drawing.Point(791, 176);
+            this.cmb_Position.Margin = new System.Windows.Forms.Padding(4);
+            this.cmb_Position.Name = "cmb_Position";
+            this.cmb_Position.Size = new System.Drawing.Size(280, 36);
+            this.cmb_Position.TabIndex = 7;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(618, 179);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(57, 28);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Vị trí";
+            // 
+            // txt_Password
+            // 
+            this.txt_Password.Enabled = false;
+            this.txt_Password.Location = new System.Drawing.Point(270, 180);
+            this.txt_Password.Margin = new System.Windows.Forms.Padding(4);
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.Size = new System.Drawing.Size(277, 34);
+            this.txt_Password.TabIndex = 3;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(57, 181);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(100, 28);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Mật Khẩu";
             // 
             // ManageEmploy_Form
             // 
@@ -377,7 +385,8 @@
             this.Name = "ManageEmploy_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ManageEmploy_Form";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvthongtinnv)).EndInit();
+            this.Load += new System.EventHandler(this.ManageEmploy_Form_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_Thongtinnv)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
@@ -387,34 +396,31 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridViewTextBoxColumn SDT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NamSinh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn GT;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Ma;
-        private System.Windows.Forms.DataGridView dgvthongtinnv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
+        private System.Windows.Forms.DataGridView dgv_Thongtinnv;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox cmbgioitinh;
-        private System.Windows.Forms.DateTimePicker dtpnamsinh;
-        private System.Windows.Forms.TextBox txtsdt;
-        private System.Windows.Forms.TextBox txtdiachi;
-        private System.Windows.Forms.TextBox txtten;
-        private System.Windows.Forms.TextBox txtmanv;
+        private System.Windows.Forms.ComboBox cmb_Sex;
+        private System.Windows.Forms.DateTimePicker dt_DOB;
+        private System.Windows.Forms.TextBox txt_NumberPhone;
+        private System.Windows.Forms.TextBox txt_Address;
+        private System.Windows.Forms.TextBox txt_Name;
+        private System.Windows.Forms.TextBox txt_UsernameNV;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnthoat;
-        private System.Windows.Forms.Button btnthem;
-        private System.Windows.Forms.Button btnhuy;
-        private System.Windows.Forms.Button btnxoa;
-        private System.Windows.Forms.Button btnluu;
-        private System.Windows.Forms.Button btnsua;
+        private System.Windows.Forms.Button btn_Exit;
+        private System.Windows.Forms.Button btn_Add;
+        private System.Windows.Forms.Button btn_Cancel;
+        private System.Windows.Forms.Button btn_Edit;
+        private System.Windows.Forms.Button btn_Save;
+        private System.Windows.Forms.Button btn_Delete;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox cmb_Position;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -12,6 +12,7 @@ namespace Food_Order_Manager.BO
 {
     class AccountBO
     {
+    
         public DataSet SignIn(AccountDTO dto)
         {
             DataSet result = new DataSet();
@@ -36,6 +37,67 @@ namespace Food_Order_Manager.BO
                 new SqlParameter("Password", dto.Password),
                 new SqlParameter("@Name",dto.Name),
                 new SqlParameter("@Position",dto.Position)
+            };
+            DataAccess data = new DataAccess();
+            result = data.Execute(sql, para);
+            return result;
+        }
+
+        public DataSet ShowListNV()
+        {
+            DataSet result = new DataSet();
+            string sql = "Select Username, Name, Password, Position, Sex, DOB, Address, NumberPhone from Account";
+            DataAccess data = new DataAccess();
+            result = data.GetDataSet(sql);
+            return result;
+        }
+
+        public int AddNV(AccountDTO dto)
+        {
+            int result = -1;
+            string sql = "INSERT INTO Account VALUES (@Username, @Password, @Name, @Position, @Sex, @DOB, @Address, @NumberPhone)";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@Username", dto.Username),
+                new SqlParameter("Password", dto.Password),
+                new SqlParameter("@Name",dto.Name),
+                new SqlParameter("@Position",dto.Position),
+                new SqlParameter("@Sex",dto.Sex),
+                new SqlParameter("@DOB",dto.DOB),
+                new SqlParameter("@Address",dto.Address),
+                new SqlParameter("@NumberPhone",dto.NumberPhone)
+            };
+            DataAccess data = new DataAccess();
+            result = data.Execute(sql, para);
+            return result;
+        }
+
+        public int UpdateNV(AccountDTO dto)
+        {
+            int result = -1;
+            string sql = "UPDATE Account SET Password = @Password, Name = @Name, Position = @Position, Sex = @Sex, DOB = @DOB, Address = @Address, NumberPhone = @NumberPhone WHERE Username = @Username";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@Username", dto.Username),
+                new SqlParameter("@Password", dto.Password),
+                new SqlParameter("@Name",dto.Name),
+                new SqlParameter("@Position",dto.Position),
+                new SqlParameter("@Sex",dto.Sex),
+                new SqlParameter("@DOB",dto.DOB),
+                new SqlParameter("@Address",dto.Address),
+                new SqlParameter("@NumberPhone",dto.NumberPhone)
+            };
+            DataAccess data = new DataAccess();
+            result = data.Execute(sql, para);
+            return result;
+        }
+        public int DeleteNV(string Username)
+        {
+            int result = -1;
+            string sql = "DELETE FROM Account WHERE Username = @Username";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@Username", Username),
             };
             DataAccess data = new DataAccess();
             result = data.Execute(sql, para);
