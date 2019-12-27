@@ -25,6 +25,10 @@ namespace Food_Order_Manager
             {
                 tableID = value;
             }
+            get
+            {
+                return tableID;
+            }
         }
 
         //table name
@@ -34,6 +38,10 @@ namespace Food_Order_Manager
             set
             {
                 tableName = value;
+            }
+            get
+            {
+                return tableName;
             }
         }
         //load function
@@ -48,5 +56,7 @@ namespace Food_Order_Manager
             this.lb_tableName.Text = tableName;
             this.lb_tableName.Name = tableID;
         }
+
+   
     }
 }
