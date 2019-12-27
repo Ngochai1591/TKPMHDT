@@ -29,11 +29,31 @@ namespace Food_Order_Manager
         {
             AccountBO list = new AccountBO();
             DataSet ds = list.ShowListNV();// lấy dữ liệu từ database đổ vào 1 table
+           
+                dgv_Thongtinnv.DataSource = ds.Tables[0];
+
             if (ds.Tables.Count > 0 && ds != null)
             {
-                dgv_Thongtinnv.DataSource = ds.Tables[0];
+                txt_UsernameNV.Text = dgv_Thongtinnv.CurrentRow.Cells["Username"].Value.ToString();
+                txt_Name.Text = dgv_Thongtinnv.CurrentRow.Cells["Name"].Value.ToString();
+                txt_Password.Text = dgv_Thongtinnv.CurrentRow.Cells["Password"].Value.ToString();
+                txt_Address.Text = dgv_Thongtinnv.CurrentRow.Cells["Address"].Value.ToString();
+                cmb_Sex.Text = dgv_Thongtinnv.CurrentRow.Cells["Sex"].Value.ToString();
+                dt_DOB.Text = dgv_Thongtinnv.CurrentRow.Cells["DOB"].Value.ToString();
+                cmb_Position.Text = dgv_Thongtinnv.CurrentRow.Cells["Position"].Value.ToString();
+                txt_NumberPhone.Text = dgv_Thongtinnv.CurrentRow.Cells["NumberPhone"].Value.ToString();
             }
-            binding();
+            else
+            {
+                txt_UsernameNV.Text = "";
+                txt_Name.Text = "";
+                txt_Password.Text = "";
+                txt_Address.Text = "";
+                cmb_Sex.Text = "";
+                dt_DOB.Text = "";
+                cmb_Position.Text = "";
+                txt_NumberPhone.Text = "";
+            }
             loadcbm();
             //Enable(true);
         }
@@ -71,34 +91,7 @@ namespace Food_Order_Manager
                 return;
             }
         }
-        void binding() //lấy dữ liệu từ dgv lên controls phía trên
-        {
-            /*txt_UsernameNV.DataBindings.Clear();
-            txt_UsernameNV.DataBindings.Add("Text", dgv_Thongtinnv.DataSource, "MaNV");
-            txt_Name.DataBindings.Clear();
-            txt_Name.DataBindings.Add("Text", dgv_Thongtinnv.DataSource, "TenNV");
-            cmb_Sex.DataBindings.Clear();
-            cmb_Sex.DataBindings.Add("Text", dgv_Thongtinnv.DataSource, "GioiTinh");
-            dt_DOB.DataBindings.Clear();
-            dt_DOB.DataBindings.Add("Text", dgv_Thongtinnv.DataSource, "NamSinh");
-            txt_Address.DataBindings.Clear();
-            txt_Address.DataBindings.Add("Text", dgv_Thongtinnv.DataSource, "DiaChi");
-            txt_Address.DataBindings.Clear();
-            txt_Password.DataBindings.Add("Text", dgv_Thongtinnv.DataSource, "MatKhau");
-            txt_Password.DataBindings.Clear();
-            cmb_Position.DataBindings.Clear();
-            cmb_Position.DataBindings.Add("Text", dgv_Thongtinnv.DataSource, "ViTri");
-            txt_NumberPhone.DataBindings.Clear();
-            txt_NumberPhone.DataBindings.Add("Text", dgv_Thongtinnv.DataSource, "SDT");*/
-            txt_UsernameNV.Text = dgv_Thongtinnv.CurrentRow.Cells["Username"].Value.ToString();
-            txt_Name.Text = dgv_Thongtinnv.CurrentRow.Cells["Name"].Value.ToString();
-            txt_Password.Text = dgv_Thongtinnv.CurrentRow.Cells["Password"].Value.ToString();
-            txt_Address.Text = dgv_Thongtinnv.CurrentRow.Cells["Address"].Value.ToString();
-            cmb_Sex.Text = dgv_Thongtinnv.CurrentRow.Cells["Sex"].Value.ToString();
-            dt_DOB.Text = dgv_Thongtinnv.CurrentRow.Cells["DOB"].Value.ToString();
-            cmb_Position.Text = dgv_Thongtinnv.CurrentRow.Cells["Position"].Value.ToString();
-            txt_NumberPhone.Text = dgv_Thongtinnv.CurrentRow.Cells["NumberPhone"].Value.ToString();
-        }
+       
         void SaveData(AccountDTO nv)//lưu dữ liệu vào class AccountDTO
         {
             nv.Username = txt_UsernameNV.Text.Trim();
@@ -119,11 +112,18 @@ namespace Food_Order_Manager
             cmb_Sex.Items.Add("Nữ");
             cmb_Sex.SelectedIndex = 0;
 
-            cmb_Position.Items.Clear();
-            cmb_Position.Items.Add("Quản lý");
-            cmb_Position.Items.Add("Thu Ngân");
-            cmb_Position.Items.Add("Nhân viên");
-            cmb_Position.SelectedIndex = 0;
+          
+
+            var items = new List<ComboItemPosition> { new ComboItemPosition("QUANLY", "Quản lý"),
+            new ComboItemPosition( "THUNGAN", "Thu Ngân"),
+            new ComboItemPosition( "NHANVIEN", "Nhân viên")};
+
+            this.cmb_Position.DataSource = items;
+            this.cmb_Position.DisplayMember = "Value";
+            this.cmb_Position.ValueMember = "Key";
+
+            this.cmb_Position.SelectedValue = "QUANLY";
+           
 
             dt_DOB.Text = DateTime.Now.ToString();
 
@@ -207,7 +207,7 @@ namespace Food_Order_Manager
                     dto.Username = txt_UsernameNV.Text;
                     dto.Password = txt_Password.Text;
                     dto.Name = txt_Name.Text;
-                    dto.Position = cmb_Position.Text;
+                    dto.Position = cmb_Position.SelectedValue.ToString();
                     dto.Sex = cmb_Sex.Text;
                     dto.DOB = dt_DOB.Text;
                     dto.Address = txt_Address.Text;
@@ -240,7 +240,7 @@ namespace Food_Order_Manager
                     dto.Username = txt_UsernameNV.Text;
                     dto.Password = txt_Password.Text;
                     dto.Name = txt_Name.Text;
-                    dto.Position = cmb_Position.Text;
+                    dto.Position = cmb_Position.SelectedValue.ToString();
                     dto.Sex = cmb_Sex.Text;
                     dto.DOB = dt_DOB.Text;
                     dto.Address = txt_Address.Text;
@@ -314,5 +314,18 @@ namespace Food_Order_Manager
         {
 
         }
+    }
+}
+public class ComboItemPosition
+{
+    public string Key { get; set; }
+    public string Value { get; set; }
+    public ComboItemPosition(string key, string value)
+    {
+        Key = key; Value = value;
+    }
+    public override string ToString()
+    {
+        return Value;
     }
 }

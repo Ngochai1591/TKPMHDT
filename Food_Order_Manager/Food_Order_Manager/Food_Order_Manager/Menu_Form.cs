@@ -69,5 +69,17 @@ namespace Food_Order_Manager
             table.ShowDialog();
             this.Close();
         }
+
+        private void bnt_PrintBill_Click(object sender, EventArgs e)
+        {
+            if (Login_Form.POSITION == "QUANLY" || Login_Form.POSITION == "THUNGAN")
+            {
+                MessageBox.Show("Bạn được thực hiện");
+            }
+            else
+            {
+                MessageBox.Show("Bạn không có quyền này");
+            }
+        }
     }
 }

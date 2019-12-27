@@ -153,3 +153,11 @@ C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Food_Form.resources
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Add_Food_Form.resources
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Edit_Food_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Add_Category_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Add_Food_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Category_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Edit_Category_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Edit_Food_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Food_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.ManageEmploy_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Menu_Form.resources
