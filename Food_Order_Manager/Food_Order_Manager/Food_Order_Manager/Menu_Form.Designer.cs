@@ -94,26 +94,24 @@
             this.panel1.Location = new System.Drawing.Point(9, 10);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(405, 692);
+            this.panel1.Size = new System.Drawing.Size(539, 851);
             this.panel1.TabIndex = 0;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(306, 19);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(408, 23);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(98, 26);
+            this.label8.Size = new System.Drawing.Size(128, 32);
             this.label8.TabIndex = 21;
             this.label8.Text = "Số lượng";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 19);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(5, 23);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 26);
+            this.label7.Size = new System.Drawing.Size(168, 32);
             this.label7.TabIndex = 20;
             this.label7.Text = "Mã Hóa đơn";
             // 
@@ -122,7 +120,7 @@
             this.bnt_Quantity_12.Location = new System.Drawing.Point(344, 618);
             this.bnt_Quantity_12.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_12.Name = "bnt_Quantity_12";
-            this.bnt_Quantity_12.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_12.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_12.TabIndex = 19;
             this.bnt_Quantity_12.Text = "12";
             this.bnt_Quantity_12.UseVisualStyleBackColor = true;
@@ -132,7 +130,7 @@
             this.bnt_Quantity_11.Location = new System.Drawing.Point(344, 566);
             this.bnt_Quantity_11.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_11.Name = "bnt_Quantity_11";
-            this.bnt_Quantity_11.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_11.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_11.TabIndex = 18;
             this.bnt_Quantity_11.Text = "11";
             this.bnt_Quantity_11.UseVisualStyleBackColor = true;
@@ -142,7 +140,7 @@
             this.bnt_Quantity_10.Location = new System.Drawing.Point(344, 517);
             this.bnt_Quantity_10.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_10.Name = "bnt_Quantity_10";
-            this.bnt_Quantity_10.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_10.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_10.TabIndex = 17;
             this.bnt_Quantity_10.Text = "10";
             this.bnt_Quantity_10.UseVisualStyleBackColor = true;
@@ -152,7 +150,7 @@
             this.bnt_Quantity_9.Location = new System.Drawing.Point(344, 465);
             this.bnt_Quantity_9.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_9.Name = "bnt_Quantity_9";
-            this.bnt_Quantity_9.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_9.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_9.TabIndex = 16;
             this.bnt_Quantity_9.Text = "9";
             this.bnt_Quantity_9.UseVisualStyleBackColor = true;
@@ -162,7 +160,7 @@
             this.bnt_Quantity_8.Location = new System.Drawing.Point(344, 414);
             this.bnt_Quantity_8.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_8.Name = "bnt_Quantity_8";
-            this.bnt_Quantity_8.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_8.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_8.TabIndex = 15;
             this.bnt_Quantity_8.Text = "8";
             this.bnt_Quantity_8.UseVisualStyleBackColor = true;
@@ -172,7 +170,7 @@
             this.bnt_Quantity_7.Location = new System.Drawing.Point(344, 363);
             this.bnt_Quantity_7.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_7.Name = "bnt_Quantity_7";
-            this.bnt_Quantity_7.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_7.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_7.TabIndex = 14;
             this.bnt_Quantity_7.Text = "7";
             this.bnt_Quantity_7.UseVisualStyleBackColor = true;
@@ -182,7 +180,7 @@
             this.bnt_Quantity_6.Location = new System.Drawing.Point(344, 313);
             this.bnt_Quantity_6.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_6.Name = "bnt_Quantity_6";
-            this.bnt_Quantity_6.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_6.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_6.TabIndex = 13;
             this.bnt_Quantity_6.Text = "6";
             this.bnt_Quantity_6.UseVisualStyleBackColor = true;
@@ -192,7 +190,7 @@
             this.bnt_Quantity_5.Location = new System.Drawing.Point(344, 260);
             this.bnt_Quantity_5.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_5.Name = "bnt_Quantity_5";
-            this.bnt_Quantity_5.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_5.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_5.TabIndex = 12;
             this.bnt_Quantity_5.Text = "5";
             this.bnt_Quantity_5.UseVisualStyleBackColor = true;
@@ -202,7 +200,7 @@
             this.bnt_Quantity_4.Location = new System.Drawing.Point(344, 210);
             this.bnt_Quantity_4.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_4.Name = "bnt_Quantity_4";
-            this.bnt_Quantity_4.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_4.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_4.TabIndex = 11;
             this.bnt_Quantity_4.Text = "4";
             this.bnt_Quantity_4.UseVisualStyleBackColor = true;
@@ -212,7 +210,7 @@
             this.bnt_Quantity_3.Location = new System.Drawing.Point(344, 160);
             this.bnt_Quantity_3.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_3.Name = "bnt_Quantity_3";
-            this.bnt_Quantity_3.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_3.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_3.TabIndex = 10;
             this.bnt_Quantity_3.Text = "3";
             this.bnt_Quantity_3.UseVisualStyleBackColor = true;
@@ -222,7 +220,7 @@
             this.bnt_Quantity_2.Location = new System.Drawing.Point(344, 109);
             this.bnt_Quantity_2.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_2.Name = "bnt_Quantity_2";
-            this.bnt_Quantity_2.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_2.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_2.TabIndex = 9;
             this.bnt_Quantity_2.Text = "2";
             this.bnt_Quantity_2.UseVisualStyleBackColor = true;
@@ -232,7 +230,7 @@
             this.bnt_Quantity_1.Location = new System.Drawing.Point(344, 59);
             this.bnt_Quantity_1.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_Quantity_1.Name = "bnt_Quantity_1";
-            this.bnt_Quantity_1.Size = new System.Drawing.Size(56, 37);
+            this.bnt_Quantity_1.Size = new System.Drawing.Size(75, 46);
             this.bnt_Quantity_1.TabIndex = 8;
             this.bnt_Quantity_1.Text = "1";
             this.bnt_Quantity_1.UseVisualStyleBackColor = true;
@@ -254,7 +252,7 @@
             this.txt_Total.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Total.Multiline = true;
             this.txt_Total.Name = "txt_Total";
-            this.txt_Total.Size = new System.Drawing.Size(189, 31);
+            this.txt_Total.Size = new System.Drawing.Size(251, 37);
             this.txt_Total.TabIndex = 6;
             // 
             // bnt_DeleteFoodDetail
@@ -262,7 +260,7 @@
             this.bnt_DeleteFoodDetail.Location = new System.Drawing.Point(16, 608);
             this.bnt_DeleteFoodDetail.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_DeleteFoodDetail.Name = "bnt_DeleteFoodDetail";
-            this.bnt_DeleteFoodDetail.Size = new System.Drawing.Size(81, 40);
+            this.bnt_DeleteFoodDetail.Size = new System.Drawing.Size(108, 49);
             this.bnt_DeleteFoodDetail.TabIndex = 6;
             this.bnt_DeleteFoodDetail.Text = "Xóa";
             this.bnt_DeleteFoodDetail.UseVisualStyleBackColor = true;
@@ -270,10 +268,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(18, 651);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(24, 801);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 26);
+            this.label6.Size = new System.Drawing.Size(142, 32);
             this.label6.TabIndex = 5;
             this.label6.Text = "Tổng tiền:";
             // 
@@ -343,7 +340,7 @@
             this.txt_NumberBill.Multiline = true;
             this.txt_NumberBill.Name = "txt_NumberBill";
             this.txt_NumberBill.ReadOnly = true;
-            this.txt_NumberBill.Size = new System.Drawing.Size(155, 36);
+            this.txt_NumberBill.Size = new System.Drawing.Size(205, 43);
             this.txt_NumberBill.TabIndex = 1;
             // 
             // gb_Category
@@ -385,7 +382,7 @@
             this.bnt_DeleteBill.Location = new System.Drawing.Point(961, 8);
             this.bnt_DeleteBill.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_DeleteBill.Name = "bnt_DeleteBill";
-            this.bnt_DeleteBill.Size = new System.Drawing.Size(112, 37);
+            this.bnt_DeleteBill.Size = new System.Drawing.Size(149, 46);
             this.bnt_DeleteBill.TabIndex = 24;
             this.bnt_DeleteBill.Text = "XÓA BILL";
             this.bnt_DeleteBill.UseVisualStyleBackColor = true;
@@ -396,10 +393,11 @@
             this.bnt_PrintBill.Location = new System.Drawing.Point(1092, 8);
             this.bnt_PrintBill.Margin = new System.Windows.Forms.Padding(2);
             this.bnt_PrintBill.Name = "bnt_PrintBill";
-            this.bnt_PrintBill.Size = new System.Drawing.Size(112, 37);
+            this.bnt_PrintBill.Size = new System.Drawing.Size(149, 46);
             this.bnt_PrintBill.TabIndex = 26;
             this.bnt_PrintBill.Text = "IN BILL";
             this.bnt_PrintBill.UseVisualStyleBackColor = true;
+            this.bnt_PrintBill.Click += new System.EventHandler(this.bnt_PrintBill_Click);
             // 
             // btn_Exit
             // 
@@ -407,7 +405,7 @@
             this.btn_Exit.Location = new System.Drawing.Point(1225, 8);
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(112, 37);
+            this.btn_Exit.Size = new System.Drawing.Size(149, 46);
             this.btn_Exit.TabIndex = 27;
             this.btn_Exit.Text = "THOÁT";
             this.btn_Exit.UseVisualStyleBackColor = true;
@@ -422,7 +420,7 @@
             // 
             // Menu_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
