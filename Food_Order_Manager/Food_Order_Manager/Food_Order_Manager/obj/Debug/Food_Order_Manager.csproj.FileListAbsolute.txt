@@ -153,3 +153,8 @@ C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Food_Form.resources
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Add_Food_Form.resources
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Edit_Food_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Add_Food_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Edit_Food_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Food_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.Category.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.Food.resources

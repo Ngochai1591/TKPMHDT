@@ -95,14 +95,14 @@ namespace Food_Order_Manager
             lb_FoodName.Text = dgv_ShowUp.CurrentRow.Cells["FoodName"].Value.ToString();
             foodName = lb_FoodName.Text;
             //lb_CategoryName.Text = dgv_ShowUp.CurrentRow.Cells["CategoryName"].Value.ToString();
-            categoryName = lb_CategoryName.Text;
+          
             categoryDTO dto = new categoryDTO();
             dto.categoryId = dgv_ShowUp.CurrentRow.Cells["CategoryId"].Value.ToString();
 
             foodBO bo = new foodBO();
             DataSet result = bo.getCategoryNameByID(dto);
             lb_CategoryName.Text = result.Tables[0].Rows[0][0].ToString();
-
+            categoryName = lb_CategoryName.Text;
             System.Byte[] arr = (dgv_ShowUp.CurrentRow.Cells["FoodPicture"].Value) as System.Byte[];
             foodPicture = arr;
             MemoryStream stream = new MemoryStream(arr);
@@ -122,7 +122,16 @@ namespace Food_Order_Manager
                 lb_FoodName.Text = dgv_ShowUp.CurrentRow.Cells["FoodName"].Value.ToString();
                 foodName = lb_FoodName.Text;
 
-              
+                string categoryId = dgv_ShowUp.CurrentRow.Cells["CategoryId"].Value.ToString();
+
+                foodBO bo = new foodBO();
+                categoryDTO dto = new categoryDTO();
+                dto.categoryId = categoryId;
+
+                DataSet result = bo.getCategoryNameByID(dto);
+
+                lb_CategoryName.Text = result.Tables[0].Rows[0][0].ToString();
+
                 System.Byte[] arr = (dgv_ShowUp.CurrentRow.Cells["FoodPicture"].Value) as System.Byte[];
                 foodPicture = arr;
                 MemoryStream stream = new MemoryStream(arr);

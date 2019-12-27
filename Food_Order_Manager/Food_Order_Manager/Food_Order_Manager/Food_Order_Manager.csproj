@@ -122,6 +122,18 @@
     <Compile Include="Register_Form.Designer.cs">
       <DependentUpon>Register_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="userControl\Category.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\Category.Designer.cs">
+      <DependentUpon>Category.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userControl\Food.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="userControl\Food.Designer.cs">
+      <DependentUpon>Food.cs</DependentUpon>
+    </Compile>
     <Compile Include="userControl\POS.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,6 +190,12 @@
     </Compile>
     <EmbeddedResource Include="Register_Form.resx">
       <DependentUpon>Register_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\Category.resx">
+      <DependentUpon>Category.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userControl\Food.resx">
+      <DependentUpon>Food.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="userControl\POS.resx">
       <DependentUpon>POS.cs</DependentUpon>

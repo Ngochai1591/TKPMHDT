@@ -21,6 +21,20 @@ namespace Food_Order_Manager.BO
             return result;
         }
 
+        public DataSet getFoodByCategoryId(foodDTO dto)
+        {
+            DataSet result = new DataSet();
+            string query = "SELECT * FROM Food WHERE categoryId=@categoryId";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@categoryId", dto.categoryId)
+            };
+            DataAccess data = new DataAccess();
+
+            result = data.GetDataSet(query, para);
+
+            return result;
+        }
         public DataSet getAllCategory()
         {
             DataSet result = new DataSet();
@@ -74,15 +88,17 @@ namespace Food_Order_Manager.BO
 
             return result;
         }
-        public int editCategory(categoryDTO dto)
+        public int editFood(foodDTO dto)
         {
             int result = -1;
-            string query = @"UPDATE Category SET categoryName = @categoryName, categoryPicture = @categoryPicture WHERE categoryId = @categoryId";
+            string query = @"UPDATE Food SET foodName = @foodName, foodPicture = @foodPicture, categoryId = @categoryId WHERE foodId = @foodId";
             SqlParameter[] para = new SqlParameter[]
             {
-                new SqlParameter("@categoryName", dto.categoryName),
-                new SqlParameter("@categoryPicture", dto.categoryPicture),
-                new SqlParameter("@categoryId", dto.categoryId)
+                new SqlParameter("@foodId",dto.foodId),
+                new SqlParameter("@foodName", dto.foodName),
+                new SqlParameter("@foodPicture", dto.foodPicture),
+                new SqlParameter("@categoryId", dto.categoryId),
+
             };
 
             DataAccess data = new DataAccess();
