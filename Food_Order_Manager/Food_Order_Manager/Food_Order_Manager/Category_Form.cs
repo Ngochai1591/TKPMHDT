@@ -33,10 +33,7 @@ namespace Food_Order_Manager
         {
             categoryBO bo = new categoryBO();
             DataSet result = bo.getAllCategory();
-            if(result.Tables[0].Rows.Count >0 && result.Tables.Count>0)
-            {
-                dgv_ShowUp.DataSource = result.Tables[0];
-            }
+            dgv_ShowUp.DataSource = result.Tables[0];
             lb_CategoryId.Text = "";
             lb_CategoryName.Text = "";
             pb_CategoryPicture.Image = null;

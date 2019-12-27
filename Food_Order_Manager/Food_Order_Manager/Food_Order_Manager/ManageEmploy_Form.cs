@@ -309,5 +309,10 @@ namespace Food_Order_Manager
             }
             ManageEmploy_Form_Load(sender, e);// hiển thị dữ liệu lên lại giao diện
         }
+
+        private void cmb_Position_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

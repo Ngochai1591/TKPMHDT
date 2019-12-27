@@ -343,6 +343,7 @@
             this.cmb_Position.Name = "cmb_Position";
             this.cmb_Position.Size = new System.Drawing.Size(280, 36);
             this.cmb_Position.TabIndex = 7;
+            this.cmb_Position.SelectedIndexChanged += new System.EventHandler(this.cmb_Position_SelectedIndexChanged);
             // 
             // label8
             // 

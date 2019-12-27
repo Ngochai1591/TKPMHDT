@@ -58,8 +58,15 @@
     <Compile Include="Add_Category_Form.Designer.cs">
       <DependentUpon>Add_Category_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="Add_Food_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_Food_Form.Designer.cs">
+      <DependentUpon>Add_Food_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="BO\AccountBO.cs" />
     <Compile Include="BO\categoryBO.cs" />
+    <Compile Include="BO\foodBO.cs" />
     <Compile Include="BO\tableBO.cs" />
     <Compile Include="Category_Form.cs">
       <SubType>Form</SubType>
@@ -76,6 +83,18 @@
     </Compile>
     <Compile Include="Edit_Category_Form.Designer.cs">
       <DependentUpon>Edit_Category_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Food_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Food_Form.Designer.cs">
+      <DependentUpon>Edit_Food_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Food_Form.Designer.cs">
+      <DependentUpon>Food_Form.cs</DependentUpon>
     </Compile>
     <Compile Include="Login_Form.cs">
       <SubType>Form</SubType>
@@ -124,11 +143,20 @@
     <EmbeddedResource Include="Add_Category_Form.resx">
       <DependentUpon>Add_Category_Form.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Add_Food_Form.resx">
+      <DependentUpon>Add_Food_Form.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Category_Form.resx">
       <DependentUpon>Category_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Edit_Category_Form.resx">
       <DependentUpon>Edit_Category_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Food_Form.resx">
+      <DependentUpon>Edit_Food_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Food_Form.resx">
+      <DependentUpon>Food_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login_Form.resx">
       <DependentUpon>Login_Form.cs</DependentUpon>
