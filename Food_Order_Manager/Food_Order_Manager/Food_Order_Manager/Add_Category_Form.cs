@@ -31,6 +31,7 @@ namespace Food_Order_Manager
             txt_CategoryId.Text = "";
             txt_CategoryName.Text = "";
             pb_CategoryPicture.Image = null;
+            
         }
 
         private void btn_Reset_Click(object sender, EventArgs e)

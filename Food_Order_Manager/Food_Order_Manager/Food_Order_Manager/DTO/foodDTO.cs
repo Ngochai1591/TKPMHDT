@@ -11,6 +11,7 @@ namespace Food_Order_Manager.DTO
         public string foodId;
         public string foodName;
         public string categoryId;
+        public int foodPrice;
         public byte[] foodPicture;
     }
 }

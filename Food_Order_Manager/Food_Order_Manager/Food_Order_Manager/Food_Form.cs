@@ -19,6 +19,7 @@ namespace Food_Order_Manager
         public static string foodName = "";
         public static string categoryName = "";
         public static byte[] foodPicture = null;
+        public static int foodPrice;
         public Food_Form()
         {
             InitializeComponent();
@@ -37,12 +38,12 @@ namespace Food_Order_Manager
             lb_FoodName.Text = "";
             lb_CategoryName.Text = "";
             pb_FoodPicture.Image = null;
+            lb_FoodPrice.Text = "";
         }
 
         private Boolean checkingBeforeClickEditOrDelete()
         {
-            if (string.IsNullOrEmpty(lb_CategoryName.Text) || string.IsNullOrEmpty(lb_FoodName.Text)|| 
-                string.IsNullOrEmpty(lb_FoodId.Text) || pb_FoodPicture.Image == null)
+            if (string.IsNullOrEmpty(lb_FoodPrice.Text) ||  string.IsNullOrEmpty(lb_CategoryName.Text) || string.IsNullOrEmpty(lb_FoodName.Text)|| string.IsNullOrEmpty(lb_FoodId.Text) || pb_FoodPicture.Image == null)
             {
                 return false;
             }
@@ -108,6 +109,11 @@ namespace Food_Order_Manager
             MemoryStream stream = new MemoryStream(arr);
             Image img = Image.FromStream(stream);
             pb_FoodPicture.Image = img;
+
+            int Price = int.Parse(dgv_ShowUp.CurrentRow.Cells["FoodPrice"].Value.ToString());
+            lb_FoodPrice.Text = String.Format("{0:n0}", Price);
+            foodPrice = Price;
+
         }
 
         private void btn_Edit_Click(object sender, EventArgs e)
@@ -137,6 +143,10 @@ namespace Food_Order_Manager
                 MemoryStream stream = new MemoryStream(arr);
                 Image img = Image.FromStream(stream);
                 pb_FoodPicture.Image = img;
+
+                int Price = int.Parse(dgv_ShowUp.CurrentRow.Cells["FoodPrice"].Value.ToString());
+                lb_FoodPrice.Text = String.Format("{0:n0}", Price);
+                foodPrice = Price;
             }
             else
             {

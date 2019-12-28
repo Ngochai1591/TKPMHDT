@@ -59,13 +59,14 @@ namespace Food_Order_Manager.BO
         public int addFood(foodDTO dto)
         {
             int result = -1;
-            string query = @"INSERT INTO Food VALUES(@FoodId, @FoodName, @CategoryId, @FoodPicture)";
+            string query = @"INSERT INTO Food VALUES(@FoodId, @FoodName, @CategoryId, @FoodPicture, @FoodPrice)";
             SqlParameter[] para = new SqlParameter[]
             {
                 new SqlParameter("@FoodId", dto.foodId),
                 new SqlParameter("@FoodName", dto.foodName),
                 new SqlParameter("@CategoryId", dto.categoryId),
-                new SqlParameter("@FoodPicture", dto.foodPicture),    
+                new SqlParameter("@FoodPicture", dto.foodPicture),
+                new SqlParameter("@FoodPrice", dto.foodPrice),
             };
             DataAccess data = new DataAccess();
 
@@ -91,13 +92,14 @@ namespace Food_Order_Manager.BO
         public int editFood(foodDTO dto)
         {
             int result = -1;
-            string query = @"UPDATE Food SET foodName = @foodName, foodPicture = @foodPicture, categoryId = @categoryId WHERE foodId = @foodId";
+            string query = @"UPDATE Food SET foodName = @foodName, foodPicture = @foodPicture, categoryId = @categoryId, foodPrice = @foodPrice WHERE foodId = @foodId";
             SqlParameter[] para = new SqlParameter[]
             {
                 new SqlParameter("@foodId",dto.foodId),
                 new SqlParameter("@foodName", dto.foodName),
                 new SqlParameter("@foodPicture", dto.foodPicture),
                 new SqlParameter("@categoryId", dto.categoryId),
+                new SqlParameter("@foodPrice", dto.foodPrice),
 
             };
 
