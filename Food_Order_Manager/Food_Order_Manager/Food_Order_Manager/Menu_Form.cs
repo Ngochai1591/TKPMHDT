@@ -187,7 +187,7 @@ namespace Food_Order_Manager
             {
                 loadingGridView();
             }
-<<<<<<< HEAD
+
             else
             {
                 MessageBox.Show("Đã có lỗi xảy ra, vui lòng kiểm tra lại", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -223,9 +223,7 @@ namespace Food_Order_Manager
             result =billbo.getBillInfoByBillId(dto);
 
             dgv_BillDetails.DataSource = result.Tables[0];
-=======
-          
->>>>>>> b82d5593988f2a6a4cc968dc589884a4179d8d07
+
         }
         private void btn_Exit_Click(object sender, EventArgs e)
         {

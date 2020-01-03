@@ -16,11 +16,9 @@ namespace Food_Order_Manager
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-<<<<<<< HEAD
+
             Application.Run(new Login_Form());
-=======
-            Application.Run(new ManageEmploy_Form());
->>>>>>> b82d5593988f2a6a4cc968dc589884a4179d8d07
+
         }
     }
 }
