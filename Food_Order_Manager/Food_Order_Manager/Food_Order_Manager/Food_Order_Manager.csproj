@@ -68,6 +68,9 @@
     <Compile Include="BO\categoryBO.cs" />
     <Compile Include="BO\foodBO.cs" />
     <Compile Include="BO\tableBO.cs" />
+    <Compile Include="BuilderPattern\BuilderPatternOfUser.cs" />
+    <Compile Include="BuilderPattern\IUserBuilder.cs" />
+    <Compile Include="BuilderPattern\User.cs" />
     <Compile Include="Category_Form.cs">
       <SubType>Form</SubType>
     </Compile>

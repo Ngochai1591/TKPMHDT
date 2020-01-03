@@ -158,3 +158,13 @@ D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Man
 D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Food_Form.resources
 D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.Category.resources
 D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.Food.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Add_Category_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Add_Food_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Category_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Edit_Category_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Edit_Food_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Food_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.ManageEmploy_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Menu_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.Category.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.Food.resources

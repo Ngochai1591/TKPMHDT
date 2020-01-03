@@ -10,6 +10,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Food_Order_Manager.BO;
+using Food_Order_Manager.BuilderPattern;
 
 namespace Food_Order_Manager
 {
@@ -32,7 +33,7 @@ namespace Food_Order_Manager
            
                 dgv_Thongtinnv.DataSource = ds.Tables[0];
 
-            if (ds.Tables.Count > 0 && ds != null)
+            if (ds != null && ds.Tables.Count > 0 && ds.Tables[0] != null && ds.Tables[0].Rows.Count > 0)
             {
                 txt_UsernameNV.Text = dgv_Thongtinnv.CurrentRow.Cells["Username"].Value.ToString();
                 txt_Name.Text = dgv_Thongtinnv.CurrentRow.Cells["Name"].Value.ToString();
@@ -203,18 +204,17 @@ namespace Food_Order_Manager
                 }
                 else
                 {
-                    AccountDTO dto = new AccountDTO();
-                    dto.Username = txt_UsernameNV.Text;
-                    dto.Password = txt_Password.Text;
-                    dto.Name = txt_Name.Text;
-                    dto.Position = cmb_Position.SelectedValue.ToString();
-                    dto.Sex = cmb_Sex.Text;
-                    dto.DOB = dt_DOB.Text;
-                    dto.Address = txt_Address.Text;
-                    dto.NumberPhone = txt_NumberPhone.Text;
+                    var NewUser = new BuilderPatternOfUser()
+                               .AddLocal(txt_Password.Text, txt_UsernameNV.Text)
+                               .AddProfile(txt_Name.Text, cmb_Sex.Text, txt_Address.Text, dt_DOB.Text, txt_NumberPhone.Text)
+                               .AddMajor(cmb_Position.SelectedValue.ToString())
+                               .Build();
 
                     AccountBO bo = new AccountBO();
-                    int result = bo.AddNV(dto);
+                    int result = bo.AddNV(NewUser);
+
+
+  
                     if (result != -1)
                     {
                         MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);

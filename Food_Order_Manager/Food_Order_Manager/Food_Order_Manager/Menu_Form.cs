@@ -96,7 +96,7 @@ namespace Food_Order_Manager
             foodDTO dto = new foodDTO();
             dto.categoryId = categoryId;
             DataSet result = bo.getFoodByCategoryId(dto);
-            for(int i =0;i<result.Tables[0].Rows.Count;i++)
+            for (int i = 0; i < result.Tables[0].Rows.Count; i++)
             {
                 Food foodUC = new Food();
                 foodUC.CATEGORYID = categoryId;
@@ -104,12 +104,10 @@ namespace Food_Order_Manager
                 foodUC.FOODNAME = result.Tables[0].Rows[i][1].ToString();
                 System.Byte[] arr = (result.Tables[0].Rows[i][3]) as System.Byte[];
                 foodUC.FOODPICTURE = arr;
-
                 flp_Food.Controls.Add(foodUC);
             }
+          
         }
-        
-
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             Table_Form table = new Table_Form();

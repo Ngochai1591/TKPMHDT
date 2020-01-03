@@ -7,6 +7,7 @@ using System.Data;
 using System.Data.SqlClient;
 using DataAccessLayer;
 using Food_Order_Manager.DTO;
+using Food_Order_Manager.BuilderPattern;
 
 namespace Food_Order_Manager.BO
 {
@@ -52,20 +53,20 @@ namespace Food_Order_Manager.BO
             return result;
         }
 
-        public int AddNV(AccountDTO dto)
+        public int AddNV(User user)
         {
             int result = -1;
             string sql = "INSERT INTO Account VALUES (@Username, @Password, @Name, @Position, @Sex, @DOB, @Address, @NumberPhone)";
             SqlParameter[] para = new SqlParameter[]
             {
-                new SqlParameter("@Username", dto.Username),
-                new SqlParameter("Password", dto.Password),
-                new SqlParameter("@Name",dto.Name),
-                new SqlParameter("@Position",dto.Position),
-                new SqlParameter("@Sex",dto.Sex),
-                new SqlParameter("@DOB",dto.DOB),
-                new SqlParameter("@Address",dto.Address),
-                new SqlParameter("@NumberPhone",dto.NumberPhone)
+                new SqlParameter("@Username", user.Username),
+                new SqlParameter("Password", user.Password),
+                new SqlParameter("@Name",user.Name),
+                new SqlParameter("@Position",user.Position),
+                new SqlParameter("@Sex",user.Sex),
+                new SqlParameter("@DOB",user.DOB),
+                new SqlParameter("@Address",user.Address),
+                new SqlParameter("@NumberPhone",user.NumberPhone)
             };
             DataAccess data = new DataAccess();
             result = data.Execute(sql, para);
