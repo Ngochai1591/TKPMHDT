@@ -1,5 +1,6 @@
 ﻿using Food_Order_Manager.BO;
 using Food_Order_Manager.DTO;
+using Food_Order_Manager.SingletonPattern;
 using Food_Order_Manager.userControl;
 using System;
 using System.Collections.Generic;
@@ -20,6 +21,7 @@ namespace Food_Order_Manager
             InitializeComponent();
         }
         //table id
+        public UserLoginSingleton userlogin;
         private string tableId;
         public string TABLEID
         {
@@ -363,7 +365,7 @@ namespace Food_Order_Manager
             else
             {
 
-                if (Login_Form.POSITION == "Manager" || Login_Form.POSITION == "Cashier")
+                if (userlogin.POSITION == "Manager" || userlogin.POSITION == "Cashier")
                 {
                     DialogResult dialog = MessageBox.Show("Bạn có muốn cancel Bill này chứ ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (dialog == DialogResult.Yes)

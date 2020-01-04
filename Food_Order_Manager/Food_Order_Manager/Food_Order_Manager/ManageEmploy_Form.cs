@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Food_Order_Manager.BO;
 using Food_Order_Manager.BuilderPattern;
+using Food_Order_Manager.StatePattern;
 
 namespace Food_Order_Manager
 {
@@ -25,7 +26,8 @@ namespace Food_Order_Manager
         DataSet data = new DataSet();
         int f = 0;
 
-       
+        StateContext stateContext = new StateContext();
+
         private void ManageEmploy_Form_Load(object sender, EventArgs e)
         {
             AccountBO list = new AccountBO();
@@ -217,12 +219,13 @@ namespace Food_Order_Manager
   
                     if (result != -1)
                     {
-                        MessageBox.Show("Thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ManageEmploy_Form_Load(sender, e);     //cập nhật lại cho màn hình hiển thị
+                        stateContext.setState(new StateNewsUser());
+                        stateContext.applyState();
                     }
                     else
                     {
-                        MessageBox.Show("Vui lòng thử lại");
+                        stateContext.setState(new Error());
+                        stateContext.applyState();
                     }
                 }
             }
@@ -249,12 +252,13 @@ namespace Food_Order_Manager
                     int result = bo.UpdateNV(dto);
                     if (result != -1)
                     {
-                        MessageBox.Show("Sửa thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        ManageEmploy_Form_Load(sender, e);     //cập nhật lại cho màn hình hiển thị
+                        stateContext.setState(new StateUpdateUser());
+                        stateContext.applyState();
                     }
                     else
                     {
-                        MessageBox.Show("Vui lòng thử lại");
+                        stateContext.setState(new Error());
+                        stateContext.applyState();
                     }
                 }
             }
@@ -294,11 +298,13 @@ namespace Food_Order_Manager
                 AccountBO del = new AccountBO();
                 if (del.DeleteNV(txt_UsernameNV.Text) != -1) // xóa gọi tới hàm delNV của class NhanVienControls
                 {
-                    MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    stateContext.setState(new StateDeleteUser());
+                    stateContext.applyState();
                 }
                 else
                 {
-                    MessageBox.Show("Xóa không thành công!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    stateContext.setState(new Error());
+                    stateContext.applyState();
                 }
 
             }

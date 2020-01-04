@@ -133,6 +133,14 @@
     <Compile Include="Register_Form.Designer.cs">
       <DependentUpon>Register_Form.cs</DependentUpon>
     </Compile>
+    <Compile Include="SingletonPattern\TaiKhoanDTOSingleton.cs" />
+    <Compile Include="SingletonPattern\UserLogin.cs" />
+    <Compile Include="StatePattern\Error.cs" />
+    <Compile Include="StatePattern\State.cs" />
+    <Compile Include="StatePattern\StateContext.cs" />
+    <Compile Include="StatePattern\StateDeleteUser.cs" />
+    <Compile Include="StatePattern\StateNewsUser.cs" />
+    <Compile Include="StatePattern\StateUpdateUser.cs" />
     <Compile Include="userControl\BillInfo.cs">
       <SubType>UserControl</SubType>
     </Compile>

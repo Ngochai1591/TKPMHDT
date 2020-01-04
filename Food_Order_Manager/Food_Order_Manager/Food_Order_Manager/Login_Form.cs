@@ -1,5 +1,6 @@
 ﻿using Food_Order_Manager.BO;
 using Food_Order_Manager.DTO;
+using Food_Order_Manager.SingletonPattern;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -36,20 +37,15 @@ namespace Food_Order_Manager
             }
             else
             {
-                AccountDTO dto = new AccountDTO();
-                dto.Username = txtUserName.Text;
-                dto.Password = txtPassWord.Text;
-                AccountBO bo = new AccountBO();
-                DataSet dataSet = bo.SignIn(dto);
-                if(dataSet.Tables[0].Rows.Count>0 && dataSet.Tables.Count>0)
+                UserLoginSingleton userlogin = TaiKhoanDTOSingleton.SignIn(txtUserName.Text, txtPassWord.Text);
+                if (userlogin != null)
                 {
-                    USERNAME = dataSet.Tables[0].Rows[0][0].ToString().Trim();
-                    NAME = dataSet.Tables[0].Rows[0][2].ToString().Trim();
-                    POSITION = dataSet.Tables[0].Rows[0][3].ToString().Trim();
                     Table_Form table = new Table_Form();
+                    table.userlogin = userlogin;
                     this.Hide();
                     table.ShowDialog();
                     this.Close();
+
                 }
                 else
                 {

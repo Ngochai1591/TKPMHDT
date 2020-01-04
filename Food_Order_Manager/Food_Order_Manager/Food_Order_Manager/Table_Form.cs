@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Food_Order_Manager.BO;
 using Food_Order_Manager.DTO;
+using Food_Order_Manager.SingletonPattern;
 
 namespace Food_Order_Manager
 {
@@ -18,7 +19,7 @@ namespace Food_Order_Manager
         {
             InitializeComponent();
         }
-
+        public UserLoginSingleton userlogin;
         private void Table_Form_Load(object sender, EventArgs e)
         {
             userLoading();
@@ -27,7 +28,7 @@ namespace Food_Order_Manager
 
         private void userLoading()
         {
-            lb_Name.Text =  Login_Form.NAME; 
+            lb_Name.Text = userlogin.NAME; 
         }
         private void tableLoading()
         {
@@ -57,6 +58,7 @@ namespace Food_Order_Manager
         private void openMenuForm(object sender, EventArgs e, string tableId, string tableName)
         {
             Menu_Form menu = new Menu_Form();
+            menu.userlogin = userlogin;
             menu.TABLEID = tableId;
             menu.TABLENAME = tableName;
             this.Hide();
@@ -65,9 +67,7 @@ namespace Food_Order_Manager
         }
         private void btn_Logout_Click(object sender, EventArgs e)
         {
-            Login_Form.USERNAME = "";
-            Login_Form.POSITION = "";
-            Login_Form.NAME = "";
+           
             Login_Form form = new Login_Form();
             this.Hide();
             form.ShowDialog();
