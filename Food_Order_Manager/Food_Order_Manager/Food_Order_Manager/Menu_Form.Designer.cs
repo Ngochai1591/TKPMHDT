@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dgv_BillDetails = new System.Windows.Forms.DataGridView();
             this.btn_Quantity_10 = new System.Windows.Forms.Button();
             this.btn_Quantity_9 = new System.Windows.Forms.Button();
             this.btn_Quantity_8 = new System.Windows.Forms.Button();
@@ -54,15 +55,14 @@
             this.flp_Category = new System.Windows.Forms.FlowLayoutPanel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.flp_Food = new System.Windows.Forms.FlowLayoutPanel();
-            this.bnt_DeleteBill = new System.Windows.Forms.Button();
-            this.bnt_PrintBill = new System.Windows.Forms.Button();
-            this.btn_Exit = new System.Windows.Forms.Button();
-            this.dgv_BillDetails = new System.Windows.Forms.DataGridView();
+            this.btn_CancelBill = new System.Windows.Forms.Button();
+            this.btn_PrintBill = new System.Windows.Forms.Button();
+            this.btn_Back = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_BillDetails)).BeginInit();
             this.panel2.SuspendLayout();
             this.gb_Category.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_BillDetails)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -93,6 +93,19 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(405, 692);
             this.panel1.TabIndex = 0;
+            // 
+            // dgv_BillDetails
+            // 
+            this.dgv_BillDetails.AllowUserToAddRows = false;
+            this.dgv_BillDetails.AllowUserToDeleteRows = false;
+            this.dgv_BillDetails.AllowUserToResizeColumns = false;
+            this.dgv_BillDetails.AllowUserToResizeRows = false;
+            this.dgv_BillDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_BillDetails.Location = new System.Drawing.Point(2, 113);
+            this.dgv_BillDetails.Name = "dgv_BillDetails";
+            this.dgv_BillDetails.ReadOnly = true;
+            this.dgv_BillDetails.Size = new System.Drawing.Size(324, 495);
+            this.dgv_BillDetails.TabIndex = 31;
             // 
             // btn_Quantity_10
             // 
@@ -227,11 +240,12 @@
             // 
             // txt_Total
             // 
-            this.txt_Total.Enabled = false;
             this.txt_Total.Location = new System.Drawing.Point(15, 657);
             this.txt_Total.Margin = new System.Windows.Forms.Padding(2);
             this.txt_Total.Multiline = true;
             this.txt_Total.Name = "txt_Total";
+            this.txt_Total.ReadOnly = true;
+            this.txt_Total.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txt_Total.Size = new System.Drawing.Size(189, 31);
             this.txt_Total.TabIndex = 6;
             // 
@@ -244,6 +258,7 @@
             this.bnt_DeleteFoodDetail.TabIndex = 6;
             this.bnt_DeleteFoodDetail.Text = "Xóa món đã chọn";
             this.bnt_DeleteFoodDetail.UseVisualStyleBackColor = true;
+            this.bnt_DeleteFoodDetail.Click += new System.EventHandler(this.bnt_DeleteFoodDetail_Click);
             // 
             // label6
             // 
@@ -327,7 +342,7 @@
             // gb_Category
             // 
             this.gb_Category.Controls.Add(this.flp_Category);
-            this.gb_Category.Location = new System.Drawing.Point(416, 43);
+            this.gb_Category.Location = new System.Drawing.Point(416, 46);
             this.gb_Category.Margin = new System.Windows.Forms.Padding(2);
             this.gb_Category.Name = "gb_Category";
             this.gb_Category.Padding = new System.Windows.Forms.Padding(2);
@@ -367,48 +382,44 @@
             this.flp_Food.Size = new System.Drawing.Size(922, 402);
             this.flp_Food.TabIndex = 1;
             // 
-            // bnt_DeleteBill
+            // btn_CancelBill
             // 
-            this.bnt_DeleteBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnt_DeleteBill.Location = new System.Drawing.Point(974, 6);
-            this.bnt_DeleteBill.Margin = new System.Windows.Forms.Padding(2);
-            this.bnt_DeleteBill.Name = "bnt_DeleteBill";
-            this.bnt_DeleteBill.Size = new System.Drawing.Size(112, 37);
-            this.bnt_DeleteBill.TabIndex = 24;
-            this.bnt_DeleteBill.Text = "XÓA BILL";
-            this.bnt_DeleteBill.UseVisualStyleBackColor = true;
+            this.btn_CancelBill.BackColor = System.Drawing.Color.Red;
+            this.btn_CancelBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_CancelBill.Location = new System.Drawing.Point(416, -3);
+            this.btn_CancelBill.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_CancelBill.Name = "btn_CancelBill";
+            this.btn_CancelBill.Size = new System.Drawing.Size(128, 50);
+            this.btn_CancelBill.TabIndex = 24;
+            this.btn_CancelBill.Text = "HỦY BILL";
+            this.btn_CancelBill.UseVisualStyleBackColor = false;
+            this.btn_CancelBill.Click += new System.EventHandler(this.btn_CancelBill_Click);
             // 
-            // bnt_PrintBill
+            // btn_PrintBill
             // 
-            this.bnt_PrintBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bnt_PrintBill.Location = new System.Drawing.Point(1104, 6);
-            this.bnt_PrintBill.Margin = new System.Windows.Forms.Padding(2);
-            this.bnt_PrintBill.Name = "bnt_PrintBill";
-            this.bnt_PrintBill.Size = new System.Drawing.Size(112, 37);
-            this.bnt_PrintBill.TabIndex = 26;
-            this.bnt_PrintBill.Text = "IN BILL";
-            this.bnt_PrintBill.UseVisualStyleBackColor = true;
-            this.bnt_PrintBill.Click += new System.EventHandler(this.bnt_PrintBill_Click);
+            this.btn_PrintBill.BackColor = System.Drawing.Color.Lime;
+            this.btn_PrintBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_PrintBill.Location = new System.Drawing.Point(1036, -3);
+            this.btn_PrintBill.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_PrintBill.Name = "btn_PrintBill";
+            this.btn_PrintBill.Size = new System.Drawing.Size(179, 50);
+            this.btn_PrintBill.TabIndex = 26;
+            this.btn_PrintBill.Text = "IN BILL";
+            this.btn_PrintBill.UseVisualStyleBackColor = false;
+            this.btn_PrintBill.Click += new System.EventHandler(this.bnt_PrintBill_Click);
             // 
-            // btn_Exit
+            // btn_Back
             // 
-            this.btn_Exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Exit.Location = new System.Drawing.Point(1230, 6);
-            this.btn_Exit.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Exit.Name = "btn_Exit";
-            this.btn_Exit.Size = new System.Drawing.Size(112, 37);
-            this.btn_Exit.TabIndex = 27;
-            this.btn_Exit.Text = "THOÁT";
-            this.btn_Exit.UseVisualStyleBackColor = true;
-            this.btn_Exit.Click += new System.EventHandler(this.btn_Exit_Click);
-            // 
-            // dgv_BillDetails
-            // 
-            this.dgv_BillDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_BillDetails.Location = new System.Drawing.Point(2, 113);
-            this.dgv_BillDetails.Name = "dgv_BillDetails";
-            this.dgv_BillDetails.Size = new System.Drawing.Size(324, 495);
-            this.dgv_BillDetails.TabIndex = 31;
+            this.btn_Back.BackColor = System.Drawing.Color.Blue;
+            this.btn_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Back.Location = new System.Drawing.Point(1230, -3);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Back.Name = "btn_Back";
+            this.btn_Back.Size = new System.Drawing.Size(112, 50);
+            this.btn_Back.TabIndex = 27;
+            this.btn_Back.Text = "TRỞ LẠI";
+            this.btn_Back.UseVisualStyleBackColor = false;
+            this.btn_Back.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
             // Menu_Form
             // 
@@ -417,10 +428,10 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(1350, 701);
-            this.Controls.Add(this.btn_Exit);
+            this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.bnt_PrintBill);
-            this.Controls.Add(this.bnt_DeleteBill);
+            this.Controls.Add(this.btn_PrintBill);
+            this.Controls.Add(this.btn_CancelBill);
             this.Controls.Add(this.gb_Category);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -431,11 +442,11 @@
             this.Load += new System.EventHandler(this.Menu_Form_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_BillDetails)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.gb_Category.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dgv_BillDetails)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -451,9 +462,9 @@
         private System.Windows.Forms.Button btn_Quantity_1;
         private System.Windows.Forms.GroupBox gb_Category;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button bnt_DeleteBill;
-        private System.Windows.Forms.Button bnt_PrintBill;
-        private System.Windows.Forms.Button btn_Exit;
+        private System.Windows.Forms.Button btn_CancelBill;
+        private System.Windows.Forms.Button btn_PrintBill;
+        private System.Windows.Forms.Button btn_Back;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_TableName;

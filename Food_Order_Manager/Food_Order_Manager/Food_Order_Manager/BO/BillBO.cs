@@ -78,6 +78,49 @@ namespace Food_Order_Manager.BO
             result = data.GetDataSet(query, para);
             return result;
         }
+
+        public int paymentForBill(billDTO dto)
+        {
+            int result = -1;
+            string query = @"UPDATE Bill SET Status = 'Done' WHERE BillId = @BillId";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@BillId",dto.billId)
+            };
+            DataAccess data = new DataAccess();
+            result = data.Execute(query, para);
+            return result;
+        }
+
+        public int deleteSingleFoodByBillIdAndOrdinalNumber(billDTO dto)
+        {
+            int result = -1;
+            string query = @"DELETE FROM Bill WHERE BillId = @BillId AND OrdinalNumber = @OrdinalNumber";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@BillId", dto.billId),
+                new SqlParameter("@OrdinalNumber", dto.ordinalNumber),
+            };
+            DataAccess data = new DataAccess();
+            result = data.Execute(query, para);
+
+            return result;
+        }
+
+        public int cancelBill(billDTO dto)
+        {
+            int result = -1;
+            string query = @"UPDATE Bill SET Status = 'CANCEL' WHERE BillId = @BillId";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@BillId", dto.billId),
+            };
+            DataAccess data = new DataAccess();
+            result = data.Execute(query, para);
+
+
+            return result;
+        }
         
     }
 }

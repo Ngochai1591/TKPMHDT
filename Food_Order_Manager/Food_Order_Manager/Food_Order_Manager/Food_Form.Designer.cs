@@ -174,6 +174,8 @@
             // 
             this.dgv_ShowUp.AllowUserToAddRows = false;
             this.dgv_ShowUp.AllowUserToDeleteRows = false;
+            this.dgv_ShowUp.AllowUserToResizeColumns = false;
+            this.dgv_ShowUp.AllowUserToResizeRows = false;
             this.dgv_ShowUp.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_ShowUp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_ShowUp.Location = new System.Drawing.Point(14, 50);

@@ -12,6 +12,19 @@ namespace Food_Order_Manager.BO
 {
     class foodBO
     {
+        public DataSet getFoodByFoodId(foodDTO dto)
+        {
+            DataSet result = new DataSet();
+            string query = @"SELECT FoodName FROM Food WHERE FoodId = @FoodId ";
+            SqlParameter[] para = new SqlParameter[]
+            {
+                new SqlParameter("@FoodId", dto.foodId),
+            };
+            DataAccess data = new DataAccess();
+            result = data.GetDataSet(query, para);
+
+            return result;
+        }
         public DataSet getAllFood()
         {
             DataSet result = new DataSet();

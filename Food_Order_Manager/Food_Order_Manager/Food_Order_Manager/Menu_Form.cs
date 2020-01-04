@@ -183,6 +183,7 @@ namespace Food_Order_Manager
 
             billBO billbo = new billBO();
             int result = billbo.addFood(dto);
+            quantity = 1;
             if(result != -1)
             {
                 loadingGridView();
@@ -211,10 +212,10 @@ namespace Food_Order_Manager
 
             return id;
         }
-
+        private int total = 0;
         private void loadingGridView()
         {
-
+            total = 0;
             billDTO dto = new billDTO();
             dto.billId = txt_NumberBill.Text;
 
@@ -224,7 +225,14 @@ namespace Food_Order_Manager
 
             dgv_BillDetails.DataSource = result.Tables[0];
 
+            for(int i =0;i<result.Tables[0].Rows.Count;i++)
+            {
+                total = total + (int.Parse(result.Tables[0].Rows[i][4].ToString()) * int.Parse(result.Tables[0].Rows[i][5].ToString()));
+            }
+            txt_Total.Text = String.Format("{0:n0}", total);
         }
+
+       
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             Table_Form table = new Table_Form();
@@ -235,13 +243,19 @@ namespace Food_Order_Manager
 
         private void bnt_PrintBill_Click(object sender, EventArgs e)
         {
-            if (Login_Form.POSITION == "QUANLY" || Login_Form.POSITION == "THUNGAN")
+            if (Login_Form.POSITION == "Manager" || Login_Form.POSITION == "Cashier")
             {
-                MessageBox.Show("Bạn được thực hiện");
+                Bill_Details_Form form = new Bill_Details_Form();
+                form.BILLID = txt_NumberBill.Text;
+                form.TOTAL = total;
+                this.Hide();
+                form.ShowDialog();
+                this.Close();
+
             }
             else
             {
-                MessageBox.Show("Bạn không có quyền này");
+                MessageBox.Show("Bạn không có quyền này","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
         }
 
@@ -293,6 +307,106 @@ namespace Food_Order_Manager
         private void btn_Quantity_10_Click(object sender, EventArgs e)
         {
             quantity = 10;
+        }
+
+        private void bnt_DeleteFoodDetail_Click(object sender, EventArgs e)
+        {
+            if(dgv_BillDetails.Rows.Count == 0)
+            {
+                MessageBox.Show("Hiện không còn món nào", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                if (dgv_BillDetails.Rows.Count == 1)
+                {
+                    tableDTO tabledto = new tableDTO();
+                    tabledto.tableID = tableId;
+                    tabledto.status = "FREE";
+                    tableBO tablebo = new tableBO();
+                    int result1 = tablebo.setTableStatus(tabledto);
+                    if (result1 != -1)
+                    {
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("Lỗi khi thay đổi trạng thái bàn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+
+                }
+                billDTO dto = new billDTO();
+                dto.billId = txt_NumberBill.Text;
+                dto.ordinalNumber = int.Parse(dgv_BillDetails.CurrentRow.Cells["OrdinalNumber"].Value.ToString());
+                billBO bo = new billBO();
+                int result = bo.deleteSingleFoodByBillIdAndOrdinalNumber(dto);
+                if (result != -1)
+                {
+                    loadingGridView();
+                }
+                else
+                {
+                    MessageBox.Show("Có lỗi xảy ra ,Vui lòng thử lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+           
+
+
+
+        }
+
+        private void btn_CancelBill_Click(object sender, EventArgs e)
+        {
+            if(dgv_BillDetails.Rows.Count == 0)
+            {
+                MessageBox.Show("Không có món nào trong hóa đơn, vui lòng thử lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+
+                if (Login_Form.POSITION == "Manager" || Login_Form.POSITION == "Cashier")
+                {
+                    DialogResult dialog = MessageBox.Show("Bạn có muốn cancel Bill này chứ ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                    if (dialog == DialogResult.Yes)
+                    {
+                        billDTO dto = new billDTO();
+                        dto.billId = txt_NumberBill.Text;
+                        billBO bo = new billBO();
+                        int result = bo.cancelBill(dto);
+                        if (result != -1)
+                        {
+                            tableDTO tabledto = new tableDTO();
+                            tabledto.tableID = tableId;
+                            tabledto.status = "FREE";
+                            tableBO tablebo = new tableBO();
+                            int result1 = tablebo.setTableStatus(tabledto);
+                            if (result1 != -1)
+                            {
+                                MessageBox.Show("Đã cancel Bill !!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                                Table_Form form = new Table_Form();
+                                this.Hide();
+                                form.ShowDialog();
+                                this.Close();
+                            }
+                            else
+                            {
+                                MessageBox.Show("Lỗi khi thay đổi trạng thái bàn", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            }
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Đã có lỗi xảy ra, vui lòng kiểm tra lại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                    
+                }
+                else
+                {
+                    MessageBox.Show("Bạn không có quyền này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+
+            }
         }
     }
 }

@@ -65,7 +65,13 @@ namespace Food_Order_Manager
         }
         private void btn_Logout_Click(object sender, EventArgs e)
         {
-
+            Login_Form.USERNAME = "";
+            Login_Form.POSITION = "";
+            Login_Form.NAME = "";
+            Login_Form form = new Login_Form();
+            this.Hide();
+            form.ShowDialog();
+            this.Close();
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

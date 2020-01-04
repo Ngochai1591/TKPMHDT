@@ -168,3 +168,5 @@ C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Foo
 C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Menu_Form.resources
 C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.Category.resources
 C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.Food.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Bill_Details_Form.resources
+D:\BaiTap\TKPMHDT\Final_Project\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.BillInfo.resources
