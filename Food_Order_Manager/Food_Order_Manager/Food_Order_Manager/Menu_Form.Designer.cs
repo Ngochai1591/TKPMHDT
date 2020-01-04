@@ -58,6 +58,9 @@
             this.btn_CancelBill = new System.Windows.Forms.Button();
             this.btn_PrintBill = new System.Windows.Forms.Button();
             this.btn_Back = new System.Windows.Forms.Button();
+            this.FoodId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_BillDetails)).BeginInit();
             this.panel2.SuspendLayout();
@@ -88,10 +91,10 @@
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.txt_NumberBill);
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(7, 8);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
+            this.panel1.Location = new System.Drawing.Point(9, 10);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(405, 692);
+            this.panel1.Size = new System.Drawing.Size(539, 851);
             this.panel1.TabIndex = 0;
             // 
             // dgv_BillDetails
@@ -101,18 +104,23 @@
             this.dgv_BillDetails.AllowUserToResizeColumns = false;
             this.dgv_BillDetails.AllowUserToResizeRows = false;
             this.dgv_BillDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgv_BillDetails.Location = new System.Drawing.Point(2, 113);
+            this.dgv_BillDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FoodId,
+            this.Quantity1,
+            this.Price});
+            this.dgv_BillDetails.Location = new System.Drawing.Point(3, 139);
+            this.dgv_BillDetails.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_BillDetails.Name = "dgv_BillDetails";
             this.dgv_BillDetails.ReadOnly = true;
-            this.dgv_BillDetails.Size = new System.Drawing.Size(324, 495);
+            this.dgv_BillDetails.Size = new System.Drawing.Size(432, 609);
             this.dgv_BillDetails.TabIndex = 31;
             // 
             // btn_Quantity_10
             // 
-            this.btn_Quantity_10.Location = new System.Drawing.Point(331, 627);
-            this.btn_Quantity_10.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Quantity_10.Location = new System.Drawing.Point(441, 772);
+            this.btn_Quantity_10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Quantity_10.Name = "btn_Quantity_10";
-            this.btn_Quantity_10.Size = new System.Drawing.Size(60, 46);
+            this.btn_Quantity_10.Size = new System.Drawing.Size(80, 57);
             this.btn_Quantity_10.TabIndex = 30;
             this.btn_Quantity_10.Text = "10";
             this.btn_Quantity_10.UseVisualStyleBackColor = true;
@@ -120,10 +128,10 @@
             // 
             // btn_Quantity_9
             // 
-            this.btn_Quantity_9.Location = new System.Drawing.Point(331, 561);
-            this.btn_Quantity_9.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Quantity_9.Location = new System.Drawing.Point(441, 690);
+            this.btn_Quantity_9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Quantity_9.Name = "btn_Quantity_9";
-            this.btn_Quantity_9.Size = new System.Drawing.Size(60, 46);
+            this.btn_Quantity_9.Size = new System.Drawing.Size(80, 57);
             this.btn_Quantity_9.TabIndex = 29;
             this.btn_Quantity_9.Text = "9";
             this.btn_Quantity_9.UseVisualStyleBackColor = true;
@@ -131,10 +139,10 @@
             // 
             // btn_Quantity_8
             // 
-            this.btn_Quantity_8.Location = new System.Drawing.Point(331, 499);
-            this.btn_Quantity_8.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Quantity_8.Location = new System.Drawing.Point(441, 614);
+            this.btn_Quantity_8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Quantity_8.Name = "btn_Quantity_8";
-            this.btn_Quantity_8.Size = new System.Drawing.Size(60, 46);
+            this.btn_Quantity_8.Size = new System.Drawing.Size(80, 57);
             this.btn_Quantity_8.TabIndex = 28;
             this.btn_Quantity_8.Text = "8";
             this.btn_Quantity_8.UseVisualStyleBackColor = true;
@@ -142,10 +150,10 @@
             // 
             // btn_Quantity_7
             // 
-            this.btn_Quantity_7.Location = new System.Drawing.Point(331, 434);
-            this.btn_Quantity_7.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Quantity_7.Location = new System.Drawing.Point(441, 534);
+            this.btn_Quantity_7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Quantity_7.Name = "btn_Quantity_7";
-            this.btn_Quantity_7.Size = new System.Drawing.Size(60, 46);
+            this.btn_Quantity_7.Size = new System.Drawing.Size(80, 57);
             this.btn_Quantity_7.TabIndex = 27;
             this.btn_Quantity_7.Text = "7";
             this.btn_Quantity_7.UseVisualStyleBackColor = true;
@@ -153,10 +161,10 @@
             // 
             // btn_Quantity_6
             // 
-            this.btn_Quantity_6.Location = new System.Drawing.Point(331, 374);
-            this.btn_Quantity_6.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Quantity_6.Location = new System.Drawing.Point(441, 460);
+            this.btn_Quantity_6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Quantity_6.Name = "btn_Quantity_6";
-            this.btn_Quantity_6.Size = new System.Drawing.Size(60, 46);
+            this.btn_Quantity_6.Size = new System.Drawing.Size(80, 57);
             this.btn_Quantity_6.TabIndex = 26;
             this.btn_Quantity_6.Text = "6";
             this.btn_Quantity_6.UseVisualStyleBackColor = true;
@@ -164,10 +172,10 @@
             // 
             // btn_Quantity_5
             // 
-            this.btn_Quantity_5.Location = new System.Drawing.Point(331, 315);
-            this.btn_Quantity_5.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Quantity_5.Location = new System.Drawing.Point(441, 388);
+            this.btn_Quantity_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Quantity_5.Name = "btn_Quantity_5";
-            this.btn_Quantity_5.Size = new System.Drawing.Size(60, 46);
+            this.btn_Quantity_5.Size = new System.Drawing.Size(80, 57);
             this.btn_Quantity_5.TabIndex = 25;
             this.btn_Quantity_5.Text = "5";
             this.btn_Quantity_5.UseVisualStyleBackColor = true;
@@ -175,10 +183,10 @@
             // 
             // btn_Quantity_4
             // 
-            this.btn_Quantity_4.Location = new System.Drawing.Point(331, 255);
-            this.btn_Quantity_4.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Quantity_4.Location = new System.Drawing.Point(441, 314);
+            this.btn_Quantity_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Quantity_4.Name = "btn_Quantity_4";
-            this.btn_Quantity_4.Size = new System.Drawing.Size(60, 46);
+            this.btn_Quantity_4.Size = new System.Drawing.Size(80, 57);
             this.btn_Quantity_4.TabIndex = 24;
             this.btn_Quantity_4.Text = "4";
             this.btn_Quantity_4.UseVisualStyleBackColor = true;
@@ -186,10 +194,10 @@
             // 
             // btn_Quantity_3
             // 
-            this.btn_Quantity_3.Location = new System.Drawing.Point(331, 191);
-            this.btn_Quantity_3.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Quantity_3.Location = new System.Drawing.Point(441, 235);
+            this.btn_Quantity_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Quantity_3.Name = "btn_Quantity_3";
-            this.btn_Quantity_3.Size = new System.Drawing.Size(60, 46);
+            this.btn_Quantity_3.Size = new System.Drawing.Size(80, 57);
             this.btn_Quantity_3.TabIndex = 23;
             this.btn_Quantity_3.Text = "3";
             this.btn_Quantity_3.UseVisualStyleBackColor = true;
@@ -197,10 +205,10 @@
             // 
             // btn_Quantity_2
             // 
-            this.btn_Quantity_2.Location = new System.Drawing.Point(331, 125);
-            this.btn_Quantity_2.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Quantity_2.Location = new System.Drawing.Point(441, 154);
+            this.btn_Quantity_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Quantity_2.Name = "btn_Quantity_2";
-            this.btn_Quantity_2.Size = new System.Drawing.Size(60, 46);
+            this.btn_Quantity_2.Size = new System.Drawing.Size(80, 57);
             this.btn_Quantity_2.TabIndex = 22;
             this.btn_Quantity_2.Text = "2";
             this.btn_Quantity_2.UseVisualStyleBackColor = true;
@@ -210,29 +218,27 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(318, 34);
-            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label8.Location = new System.Drawing.Point(424, 42);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 24);
+            this.label8.Size = new System.Drawing.Size(109, 29);
             this.label8.TabIndex = 21;
             this.label8.Text = "Số lượng";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 19);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(5, 23);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(130, 26);
+            this.label7.Size = new System.Drawing.Size(168, 32);
             this.label7.TabIndex = 20;
             this.label7.Text = "Mã Hóa đơn";
             // 
             // btn_Quantity_1
             // 
-            this.btn_Quantity_1.Location = new System.Drawing.Point(331, 61);
-            this.btn_Quantity_1.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Quantity_1.Location = new System.Drawing.Point(441, 75);
+            this.btn_Quantity_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Quantity_1.Name = "btn_Quantity_1";
-            this.btn_Quantity_1.Size = new System.Drawing.Size(60, 46);
+            this.btn_Quantity_1.Size = new System.Drawing.Size(80, 57);
             this.btn_Quantity_1.TabIndex = 8;
             this.btn_Quantity_1.Text = "1";
             this.btn_Quantity_1.UseVisualStyleBackColor = true;
@@ -240,21 +246,21 @@
             // 
             // txt_Total
             // 
-            this.txt_Total.Location = new System.Drawing.Point(15, 657);
-            this.txt_Total.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_Total.Location = new System.Drawing.Point(20, 809);
+            this.txt_Total.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Total.Multiline = true;
             this.txt_Total.Name = "txt_Total";
             this.txt_Total.ReadOnly = true;
             this.txt_Total.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txt_Total.Size = new System.Drawing.Size(189, 31);
+            this.txt_Total.Size = new System.Drawing.Size(251, 37);
             this.txt_Total.TabIndex = 6;
             // 
             // bnt_DeleteFoodDetail
             // 
-            this.bnt_DeleteFoodDetail.Location = new System.Drawing.Point(121, 613);
-            this.bnt_DeleteFoodDetail.Margin = new System.Windows.Forms.Padding(2);
+            this.bnt_DeleteFoodDetail.Location = new System.Drawing.Point(161, 754);
+            this.bnt_DeleteFoodDetail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bnt_DeleteFoodDetail.Name = "bnt_DeleteFoodDetail";
-            this.bnt_DeleteFoodDetail.Size = new System.Drawing.Size(192, 40);
+            this.bnt_DeleteFoodDetail.Size = new System.Drawing.Size(256, 49);
             this.bnt_DeleteFoodDetail.TabIndex = 6;
             this.bnt_DeleteFoodDetail.Text = "Xóa món đã chọn";
             this.bnt_DeleteFoodDetail.UseVisualStyleBackColor = true;
@@ -263,10 +269,9 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 620);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Location = new System.Drawing.Point(13, 763);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(107, 26);
+            this.label6.Size = new System.Drawing.Size(142, 32);
             this.label6.TabIndex = 5;
             this.label6.Text = "Tổng tiền:";
             // 
@@ -278,42 +283,41 @@
             this.panel2.Controls.Add(this.txt_Name);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(2, 48);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
+            this.panel2.Location = new System.Drawing.Point(3, 59);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(314, 60);
+            this.panel2.Size = new System.Drawing.Size(418, 73);
             this.panel2.TabIndex = 3;
             // 
             // txt_TableName
             // 
             this.txt_TableName.Enabled = false;
-            this.txt_TableName.Location = new System.Drawing.Point(205, 19);
-            this.txt_TableName.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_TableName.Location = new System.Drawing.Point(273, 23);
+            this.txt_TableName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_TableName.Multiline = true;
             this.txt_TableName.Name = "txt_TableName";
             this.txt_TableName.ReadOnly = true;
-            this.txt_TableName.Size = new System.Drawing.Size(105, 30);
+            this.txt_TableName.Size = new System.Drawing.Size(139, 36);
             this.txt_TableName.TabIndex = 24;
             // 
             // txt_Name
             // 
             this.txt_Name.Enabled = false;
-            this.txt_Name.Location = new System.Drawing.Point(4, 19);
-            this.txt_Name.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_Name.Location = new System.Drawing.Point(5, 23);
+            this.txt_Name.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_Name.Multiline = true;
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.ReadOnly = true;
-            this.txt_Name.Size = new System.Drawing.Size(193, 30);
+            this.txt_Name.Size = new System.Drawing.Size(256, 36);
             this.txt_Name.TabIndex = 23;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(201, 0);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(268, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 20);
+            this.label2.Size = new System.Drawing.Size(92, 25);
             this.label2.TabIndex = 22;
             this.label2.Text = "Tên bàn";
             // 
@@ -321,32 +325,31 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 20);
+            this.label1.Size = new System.Drawing.Size(86, 25);
             this.label1.TabIndex = 21;
             this.label1.Text = "Tên NV";
             // 
             // txt_NumberBill
             // 
             this.txt_NumberBill.Enabled = false;
-            this.txt_NumberBill.Location = new System.Drawing.Point(131, 11);
-            this.txt_NumberBill.Margin = new System.Windows.Forms.Padding(2);
+            this.txt_NumberBill.Location = new System.Drawing.Point(175, 14);
+            this.txt_NumberBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txt_NumberBill.Multiline = true;
             this.txt_NumberBill.Name = "txt_NumberBill";
             this.txt_NumberBill.ReadOnly = true;
-            this.txt_NumberBill.Size = new System.Drawing.Size(185, 36);
+            this.txt_NumberBill.Size = new System.Drawing.Size(245, 43);
             this.txt_NumberBill.TabIndex = 1;
             // 
             // gb_Category
             // 
             this.gb_Category.Controls.Add(this.flp_Category);
-            this.gb_Category.Location = new System.Drawing.Point(416, 46);
-            this.gb_Category.Margin = new System.Windows.Forms.Padding(2);
+            this.gb_Category.Location = new System.Drawing.Point(555, 57);
+            this.gb_Category.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gb_Category.Name = "gb_Category";
-            this.gb_Category.Padding = new System.Windows.Forms.Padding(2);
-            this.gb_Category.Size = new System.Drawing.Size(930, 267);
+            this.gb_Category.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gb_Category.Size = new System.Drawing.Size(1240, 329);
             this.gb_Category.TabIndex = 1;
             this.gb_Category.TabStop = false;
             this.gb_Category.Text = "Danh mục";
@@ -354,21 +357,21 @@
             // flp_Category
             // 
             this.flp_Category.AutoScroll = true;
-            this.flp_Category.Location = new System.Drawing.Point(4, 12);
-            this.flp_Category.Margin = new System.Windows.Forms.Padding(2);
+            this.flp_Category.Location = new System.Drawing.Point(5, 15);
+            this.flp_Category.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flp_Category.Name = "flp_Category";
-            this.flp_Category.Size = new System.Drawing.Size(922, 251);
+            this.flp_Category.Size = new System.Drawing.Size(1229, 309);
             this.flp_Category.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.flp_Food);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(416, 314);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Location = new System.Drawing.Point(555, 386);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(930, 386);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox2.Size = new System.Drawing.Size(1240, 475);
             this.groupBox2.TabIndex = 25;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Chi tiết danh mục";
@@ -376,20 +379,20 @@
             // flp_Food
             // 
             this.flp_Food.AutoScroll = true;
-            this.flp_Food.Location = new System.Drawing.Point(4, 15);
-            this.flp_Food.Margin = new System.Windows.Forms.Padding(2);
+            this.flp_Food.Location = new System.Drawing.Point(5, 18);
+            this.flp_Food.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flp_Food.Name = "flp_Food";
-            this.flp_Food.Size = new System.Drawing.Size(922, 402);
+            this.flp_Food.Size = new System.Drawing.Size(1229, 495);
             this.flp_Food.TabIndex = 1;
             // 
             // btn_CancelBill
             // 
             this.btn_CancelBill.BackColor = System.Drawing.Color.Red;
             this.btn_CancelBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_CancelBill.Location = new System.Drawing.Point(416, -3);
-            this.btn_CancelBill.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_CancelBill.Location = new System.Drawing.Point(555, -4);
+            this.btn_CancelBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_CancelBill.Name = "btn_CancelBill";
-            this.btn_CancelBill.Size = new System.Drawing.Size(128, 50);
+            this.btn_CancelBill.Size = new System.Drawing.Size(171, 62);
             this.btn_CancelBill.TabIndex = 24;
             this.btn_CancelBill.Text = "HỦY BILL";
             this.btn_CancelBill.UseVisualStyleBackColor = false;
@@ -399,10 +402,10 @@
             // 
             this.btn_PrintBill.BackColor = System.Drawing.Color.Lime;
             this.btn_PrintBill.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_PrintBill.Location = new System.Drawing.Point(1036, -3);
-            this.btn_PrintBill.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_PrintBill.Location = new System.Drawing.Point(1381, -4);
+            this.btn_PrintBill.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_PrintBill.Name = "btn_PrintBill";
-            this.btn_PrintBill.Size = new System.Drawing.Size(179, 50);
+            this.btn_PrintBill.Size = new System.Drawing.Size(239, 62);
             this.btn_PrintBill.TabIndex = 26;
             this.btn_PrintBill.Text = "IN BILL";
             this.btn_PrintBill.UseVisualStyleBackColor = false;
@@ -412,22 +415,45 @@
             // 
             this.btn_Back.BackColor = System.Drawing.Color.Blue;
             this.btn_Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Back.Location = new System.Drawing.Point(1230, -3);
-            this.btn_Back.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Back.Location = new System.Drawing.Point(1640, -4);
+            this.btn_Back.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btn_Back.Name = "btn_Back";
-            this.btn_Back.Size = new System.Drawing.Size(112, 50);
+            this.btn_Back.Size = new System.Drawing.Size(149, 62);
             this.btn_Back.TabIndex = 27;
             this.btn_Back.Text = "TRỞ LẠI";
             this.btn_Back.UseVisualStyleBackColor = false;
             this.btn_Back.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
+            // FoodId
+            // 
+            this.FoodId.DataPropertyName = "FoodId";
+            this.FoodId.HeaderText = "ID Món ăn";
+            this.FoodId.Name = "FoodId";
+            this.FoodId.ReadOnly = true;
+            // 
+            // Quantity1
+            // 
+            this.Quantity1.DataPropertyName = "Quantity";
+            this.Quantity1.HeaderText = "Số lượng";
+            this.Quantity1.Name = "Quantity1";
+            this.Quantity1.ReadOnly = true;
+            this.Quantity1.Width = 80;
+            // 
+            // Price
+            // 
+            this.Price.DataPropertyName = "Cost";
+            this.Price.HeaderText = "Giá tiền";
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
+            this.Price.Width = 120;
+            // 
             // Menu_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
-            this.ClientSize = new System.Drawing.Size(1350, 701);
+            this.ClientSize = new System.Drawing.Size(1800, 863);
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_PrintBill);
@@ -435,7 +461,7 @@
             this.Controls.Add(this.gb_Category);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Menu_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu_Form";
@@ -483,5 +509,8 @@
         private System.Windows.Forms.Button btn_Quantity_3;
         private System.Windows.Forms.Button btn_Quantity_2;
         private System.Windows.Forms.DataGridView dgv_BillDetails;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FoodId;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantity1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
     }
 }
