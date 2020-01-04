@@ -1,5 +1,6 @@
 ﻿using Food_Order_Manager.BO;
 using Food_Order_Manager.DTO;
+using Food_Order_Manager.SingletonPattern;
 using Food_Order_Manager.userControl;
 using System;
 using System.Collections.Generic;
@@ -16,6 +17,7 @@ namespace Food_Order_Manager
     public partial class Bill_Details_Form : Form
     {
 
+        public UserLoginSingleton userlogin;
         public Bill_Details_Form()
         {
             InitializeComponent();
@@ -62,7 +64,7 @@ namespace Food_Order_Manager
        
         private void loadingBillDetails()
         {
-            lb_NAME.Text = Login_Form.NAME;
+            lb_NAME.Text = userlogin.NAME;
             lb_BillId.Text = billid;
             billDTO dto = new billDTO();
             dto.billId = billid;
@@ -147,6 +149,7 @@ namespace Food_Order_Manager
                 {
                     MessageBox.Show("Thanh toán thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Table_Form form = new Table_Form();
+                    form.userlogin = userlogin;
                     this.Hide();
                     form.ShowDialog();
                     this.Close();

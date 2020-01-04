@@ -21,6 +21,7 @@ namespace Food_Order_Manager
             InitializeComponent();
         }
         //table id
+      
         public UserLoginSingleton userlogin;
         private string tableId;
         public string TABLEID
@@ -94,7 +95,7 @@ namespace Food_Order_Manager
         private void loadingMenu()
         {
             txt_TableName.Text = tableName;
-            txt_Name.Text = Login_Form.NAME;
+            txt_Name.Text = userlogin.NAME;
             loadingCategory();
         }
 
@@ -166,7 +167,7 @@ namespace Food_Order_Manager
 
             dto.billId = txt_NumberBill.Text;
             dto.tableId = tableId;
-            dto.username = Login_Form.USERNAME;
+            dto.username = userlogin.USERNAME;
             //update ordinal number
             ordinal = ordinal + 1;
             dto.ordinalNumber = ordinal;
@@ -238,6 +239,7 @@ namespace Food_Order_Manager
         private void btn_Exit_Click(object sender, EventArgs e)
         {
             Table_Form table = new Table_Form();
+            table.userlogin = userlogin;
             this.Hide();
             table.ShowDialog();
             this.Close();
@@ -245,9 +247,10 @@ namespace Food_Order_Manager
 
         private void bnt_PrintBill_Click(object sender, EventArgs e)
         {
-            if (Login_Form.POSITION == "Manager" || Login_Form.POSITION == "Cashier")
+            if (userlogin.POSITION == "QUANLY" || userlogin.POSITION == "THUNGAN")
             {
                 Bill_Details_Form form = new Bill_Details_Form();
+                form.userlogin = userlogin;
                 form.BILLID = txt_NumberBill.Text;
                 form.TOTAL = total;
                 this.Hide();
@@ -365,7 +368,7 @@ namespace Food_Order_Manager
             else
             {
 
-                if (userlogin.POSITION == "Manager" || userlogin.POSITION == "Cashier")
+                if (userlogin.POSITION == "QUANLY" || userlogin.POSITION == "THUNGAN")
                 {
                     DialogResult dialog = MessageBox.Show("Bạn có muốn cancel Bill này chứ ?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                     if (dialog == DialogResult.Yes)
@@ -385,6 +388,7 @@ namespace Food_Order_Manager
                             {
                                 MessageBox.Show("Đã cancel Bill !!!", "Thông Báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                                 Table_Form form = new Table_Form();
+                                form.userlogin = userlogin;
                                 this.Hide();
                                 form.ShowDialog();
                                 this.Close();
