@@ -73,7 +73,7 @@
             this.dgv_Thongtinnv.Margin = new System.Windows.Forms.Padding(4);
             this.dgv_Thongtinnv.Name = "dgv_Thongtinnv";
             this.dgv_Thongtinnv.ReadOnly = true;
-            this.dgv_Thongtinnv.Size = new System.Drawing.Size(1062, 191);
+            this.dgv_Thongtinnv.Size = new System.Drawing.Size(1136, 186);
             this.dgv_Thongtinnv.TabIndex = 0;
             this.dgv_Thongtinnv.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Thongtinnv_CellClick);
             this.dgv_Thongtinnv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Thongtinnv_CellContentClick);
@@ -83,11 +83,11 @@
             this.groupBox3.Controls.Add(this.dgv_Thongtinnv);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.groupBox3.ForeColor = System.Drawing.Color.Black;
-            this.groupBox3.Location = new System.Drawing.Point(68, 511);
+            this.groupBox3.Location = new System.Drawing.Point(164, 527);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox3.Size = new System.Drawing.Size(1108, 262);
+            this.groupBox3.Size = new System.Drawing.Size(1197, 287);
             this.groupBox3.TabIndex = 11;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Dánh Sách Thông Tin Nhân Viên";
@@ -96,7 +96,7 @@
             // 
             this.cmb_Sex.Enabled = false;
             this.cmb_Sex.FormattingEnabled = true;
-            this.cmb_Sex.Location = new System.Drawing.Point(791, 49);
+            this.cmb_Sex.Location = new System.Drawing.Point(839, 51);
             this.cmb_Sex.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_Sex.Name = "cmb_Sex";
             this.cmb_Sex.Size = new System.Drawing.Size(280, 36);
@@ -106,7 +106,7 @@
             // 
             this.dt_DOB.Enabled = false;
             this.dt_DOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dt_DOB.Location = new System.Drawing.Point(791, 112);
+            this.dt_DOB.Location = new System.Drawing.Point(839, 114);
             this.dt_DOB.Margin = new System.Windows.Forms.Padding(4);
             this.dt_DOB.Name = "dt_DOB";
             this.dt_DOB.Size = new System.Drawing.Size(280, 34);
@@ -115,7 +115,7 @@
             // txt_NumberPhone
             // 
             this.txt_NumberPhone.Enabled = false;
-            this.txt_NumberPhone.Location = new System.Drawing.Point(791, 236);
+            this.txt_NumberPhone.Location = new System.Drawing.Point(839, 238);
             this.txt_NumberPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txt_NumberPhone.Name = "txt_NumberPhone";
             this.txt_NumberPhone.Size = new System.Drawing.Size(280, 34);
@@ -124,7 +124,7 @@
             // txt_Address
             // 
             this.txt_Address.Enabled = false;
-            this.txt_Address.Location = new System.Drawing.Point(270, 238);
+            this.txt_Address.Location = new System.Drawing.Point(284, 238);
             this.txt_Address.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Address.Name = "txt_Address";
             this.txt_Address.Size = new System.Drawing.Size(277, 34);
@@ -133,7 +133,7 @@
             // txt_Name
             // 
             this.txt_Name.Enabled = false;
-            this.txt_Name.Location = new System.Drawing.Point(270, 119);
+            this.txt_Name.Location = new System.Drawing.Point(284, 119);
             this.txt_Name.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.Size = new System.Drawing.Size(277, 34);
@@ -142,7 +142,7 @@
             // txt_UsernameNV
             // 
             this.txt_UsernameNV.Enabled = false;
-            this.txt_UsernameNV.Location = new System.Drawing.Point(270, 58);
+            this.txt_UsernameNV.Location = new System.Drawing.Point(284, 58);
             this.txt_UsernameNV.Margin = new System.Windows.Forms.Padding(4);
             this.txt_UsernameNV.Name = "txt_UsernameNV";
             this.txt_UsernameNV.Size = new System.Drawing.Size(277, 34);
@@ -151,7 +151,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 239);
+            this.label2.Location = new System.Drawing.Point(71, 239);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 28);
@@ -161,7 +161,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(616, 238);
+            this.label6.Location = new System.Drawing.Point(664, 240);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(137, 28);
@@ -171,7 +171,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(616, 112);
+            this.label5.Location = new System.Drawing.Point(664, 114);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(101, 28);
@@ -181,7 +181,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(616, 53);
+            this.label4.Location = new System.Drawing.Point(664, 55);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(96, 28);
@@ -191,7 +191,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(53, 119);
+            this.label3.Location = new System.Drawing.Point(67, 119);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 28);
@@ -201,7 +201,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 59);
+            this.label1.Location = new System.Drawing.Point(71, 59);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(205, 28);
@@ -214,7 +214,7 @@
             this.btn_Exit.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Exit.BackgroundImage")));
             this.btn_Exit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Exit.Enabled = false;
-            this.btn_Exit.Location = new System.Drawing.Point(953, 20);
+            this.btn_Exit.Location = new System.Drawing.Point(1009, 20);
             this.btn_Exit.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Exit.Name = "btn_Exit";
             this.btn_Exit.Size = new System.Drawing.Size(132, 92);
@@ -241,7 +241,7 @@
             this.btn_Cancel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Cancel.BackgroundImage")));
             this.btn_Cancel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Cancel.Enabled = false;
-            this.btn_Cancel.Location = new System.Drawing.Point(775, 20);
+            this.btn_Cancel.Location = new System.Drawing.Point(820, 20);
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(132, 92);
@@ -268,7 +268,7 @@
             this.btn_Save.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_Save.BackgroundImage")));
             this.btn_Save.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Save.Enabled = false;
-            this.btn_Save.Location = new System.Drawing.Point(592, 20);
+            this.btn_Save.Location = new System.Drawing.Point(614, 20);
             this.btn_Save.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Save.Name = "btn_Save";
             this.btn_Save.Size = new System.Drawing.Size(132, 92);
@@ -297,11 +297,11 @@
             this.groupBox2.Controls.Add(this.btn_Edit);
             this.groupBox2.Controls.Add(this.btn_Save);
             this.groupBox2.Controls.Add(this.btn_Delete);
-            this.groupBox2.Location = new System.Drawing.Point(68, 354);
+            this.groupBox2.Location = new System.Drawing.Point(164, 370);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox2.Size = new System.Drawing.Size(1108, 123);
+            this.groupBox2.Size = new System.Drawing.Size(1197, 123);
             this.groupBox2.TabIndex = 10;
             this.groupBox2.TabStop = false;
             // 
@@ -324,12 +324,12 @@
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
-            this.groupBox1.Location = new System.Drawing.Point(68, 22);
+            this.groupBox1.ForeColor = System.Drawing.Color.Black;
+            this.groupBox1.Location = new System.Drawing.Point(164, 38);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox1.Size = new System.Drawing.Size(1108, 297);
+            this.groupBox1.Size = new System.Drawing.Size(1197, 297);
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Nhân Viên";
@@ -338,7 +338,7 @@
             // 
             this.cmb_Position.Enabled = false;
             this.cmb_Position.FormattingEnabled = true;
-            this.cmb_Position.Location = new System.Drawing.Point(791, 176);
+            this.cmb_Position.Location = new System.Drawing.Point(839, 178);
             this.cmb_Position.Margin = new System.Windows.Forms.Padding(4);
             this.cmb_Position.Name = "cmb_Position";
             this.cmb_Position.Size = new System.Drawing.Size(280, 36);
@@ -348,7 +348,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(618, 179);
+            this.label8.Location = new System.Drawing.Point(666, 181);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(57, 28);
@@ -358,7 +358,7 @@
             // txt_Password
             // 
             this.txt_Password.Enabled = false;
-            this.txt_Password.Location = new System.Drawing.Point(270, 180);
+            this.txt_Password.Location = new System.Drawing.Point(284, 180);
             this.txt_Password.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Size = new System.Drawing.Size(277, 34);
@@ -367,7 +367,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(57, 181);
+            this.label7.Location = new System.Drawing.Point(71, 181);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(100, 28);
@@ -378,8 +378,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1782, 803);
+            this.ClientSize = new System.Drawing.Size(1800, 875);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);

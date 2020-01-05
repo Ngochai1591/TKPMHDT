@@ -22,8 +22,13 @@ namespace Food_Order_Manager
         public UserLoginSingleton userlogin;
         private void Table_Form_Load(object sender, EventArgs e)
         {
+            getUserLoginForPOSUserControl();
             userLoading();
             tableLoading();
+        }
+        private void getUserLoginForPOSUserControl()
+        {
+            this.pos1.userlogin = userlogin;
         }
 
         private void userLoading()

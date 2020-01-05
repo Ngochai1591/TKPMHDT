@@ -52,7 +52,7 @@
             this.label1.Location = new System.Drawing.Point(208, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(385, 33);
+            this.label1.Size = new System.Drawing.Size(484, 42);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quản lý Danh mục món ăn";
             // 
@@ -105,7 +105,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(29, 357);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(359, 31);
+            this.label2.Size = new System.Drawing.Size(447, 39);
             this.label2.TabIndex = 5;
             this.label2.Text = "Danh mục món ăn đã chọn";
             // 
@@ -115,7 +115,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(57, 424);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(142, 25);
+            this.label3.Size = new System.Drawing.Size(176, 31);
             this.label3.TabIndex = 6;
             this.label3.Text = "Mã danh mục";
             // 
@@ -124,7 +124,7 @@
             this.lb_CategoryId.AutoSize = true;
             this.lb_CategoryId.Location = new System.Drawing.Point(226, 424);
             this.lb_CategoryId.Name = "lb_CategoryId";
-            this.lb_CategoryId.Size = new System.Drawing.Size(0, 25);
+            this.lb_CategoryId.Size = new System.Drawing.Size(0, 31);
             this.lb_CategoryId.TabIndex = 7;
             // 
             // label4
@@ -133,7 +133,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(57, 495);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 25);
+            this.label4.Size = new System.Drawing.Size(194, 31);
             this.label4.TabIndex = 8;
             this.label4.Text = "Tên danh mục:";
             // 
@@ -142,7 +142,7 @@
             this.lb_CategoryName.AutoSize = true;
             this.lb_CategoryName.Location = new System.Drawing.Point(226, 495);
             this.lb_CategoryName.Name = "lb_CategoryName";
-            this.lb_CategoryName.Size = new System.Drawing.Size(0, 25);
+            this.lb_CategoryName.Size = new System.Drawing.Size(0, 31);
             this.lb_CategoryName.TabIndex = 9;
             // 
             // label5
@@ -151,7 +151,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(442, 424);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(98, 25);
+            this.label5.Size = new System.Drawing.Size(122, 31);
             this.label5.TabIndex = 10;
             this.label5.Text = "Hình ảnh";
             // 
@@ -176,9 +176,11 @@
             // 
             // Category_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(774, 594);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.pb_CategoryPicture);
             this.Controls.Add(this.label5);

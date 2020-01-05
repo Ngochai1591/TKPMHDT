@@ -82,7 +82,7 @@
             // 
             this.txt_CategoryId.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_CategoryId.Location = new System.Drawing.Point(264, 129);
-            this.txt_CategoryId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_CategoryId.Margin = new System.Windows.Forms.Padding(4);
             this.txt_CategoryId.Name = "txt_CategoryId";
             this.txt_CategoryId.Size = new System.Drawing.Size(497, 37);
             this.txt_CategoryId.TabIndex = 3;
@@ -92,7 +92,7 @@
             // 
             this.txt_CategoryName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_CategoryName.Location = new System.Drawing.Point(264, 213);
-            this.txt_CategoryName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_CategoryName.Margin = new System.Windows.Forms.Padding(4);
             this.txt_CategoryName.Name = "txt_CategoryName";
             this.txt_CategoryName.Size = new System.Drawing.Size(497, 37);
             this.txt_CategoryName.TabIndex = 4;
@@ -114,7 +114,7 @@
             // 
             this.btn_ChoosePicture.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ChoosePicture.Location = new System.Drawing.Point(951, 62);
-            this.btn_ChoosePicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_ChoosePicture.Margin = new System.Windows.Forms.Padding(4);
             this.btn_ChoosePicture.Name = "btn_ChoosePicture";
             this.btn_ChoosePicture.Size = new System.Drawing.Size(155, 44);
             this.btn_ChoosePicture.TabIndex = 6;
@@ -125,7 +125,7 @@
             // pb_CategoryPicture
             // 
             this.pb_CategoryPicture.Location = new System.Drawing.Point(796, 135);
-            this.pb_CategoryPicture.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pb_CategoryPicture.Margin = new System.Windows.Forms.Padding(4);
             this.pb_CategoryPicture.Name = "pb_CategoryPicture";
             this.pb_CategoryPicture.Size = new System.Drawing.Size(364, 327);
             this.pb_CategoryPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -137,7 +137,7 @@
             // 
             this.btn_Add.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Add.Location = new System.Drawing.Point(63, 341);
-            this.btn_Add.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Add.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(203, 79);
             this.btn_Add.TabIndex = 8;
@@ -149,7 +149,7 @@
             // 
             this.btn_Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cancel.Location = new System.Drawing.Point(560, 341);
-            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Cancel.Name = "btn_Cancel";
             this.btn_Cancel.Size = new System.Drawing.Size(203, 79);
             this.btn_Cancel.TabIndex = 9;
@@ -161,7 +161,7 @@
             // 
             this.btn_Reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Reset.Location = new System.Drawing.Point(316, 341);
-            this.btn_Reset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Reset.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Reset.Name = "btn_Reset";
             this.btn_Reset.Size = new System.Drawing.Size(203, 79);
             this.btn_Reset.TabIndex = 10;
@@ -173,7 +173,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1192, 486);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.btn_Cancel);
             this.Controls.Add(this.btn_Add);
@@ -185,7 +187,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Add_Category_Form";
             this.Text = "Add_Category_Form";
             this.Load += new System.EventHandler(this.Add_Category_Form_Load);

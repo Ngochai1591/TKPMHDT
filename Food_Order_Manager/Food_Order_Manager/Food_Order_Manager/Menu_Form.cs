@@ -256,7 +256,6 @@ namespace Food_Order_Manager
                 this.Hide();
                 form.ShowDialog();
                 this.Close();
-
             }
             else
             {

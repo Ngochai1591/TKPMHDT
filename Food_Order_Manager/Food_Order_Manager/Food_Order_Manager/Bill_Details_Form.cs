@@ -61,7 +61,7 @@ namespace Food_Order_Manager
 
             loadingBillDetails();
         }
-       
+
         private void loadingBillDetails()
         {
             lb_NAME.Text = userlogin.NAME;
@@ -72,10 +72,10 @@ namespace Food_Order_Manager
             DataSet result = new DataSet();
             result = bo.getBillInfoByBillId(dto);
             string tableId = "";
-           // Point initPoint = new Point(0, 0);
-            if(result.Tables.Count >0 && result.Tables[0].Rows.Count>0)
+            // Point initPoint = new Point(0, 0);
+            if (result.Tables.Count > 0 && result.Tables[0].Rows.Count > 0)
             {
-                for(int i =0;i<result.Tables[0].Rows.Count;i++)
+                for (int i = 0; i < result.Tables[0].Rows.Count; i++)
                 {
                     foodDTO fooddto = new foodDTO();
                     fooddto.foodId = result.Tables[0].Rows[i][2].ToString();
@@ -113,7 +113,7 @@ namespace Food_Order_Manager
                 Button btn_Payment = new Button();
                 btn_Payment.Text = "Thanh toán";
                 btn_Payment.Font = new Font("Times New Roman", 15.0f, FontStyle.Bold);
-                btn_Payment.Location = new Point(32, lb_TotalText.Location.Y-10);
+                btn_Payment.Location = new Point(32, lb_TotalText.Location.Y - 10);
                 btn_Payment.Size = new Size(150, 50);
                 //btn_Payment.AutoSize = true;
                 btn_Payment.BackColor = Color.Blue;
@@ -123,14 +123,17 @@ namespace Food_Order_Manager
 
                 btn_Payment.Click += (sender, e) =>
                  {
-                     paymentEvent(sender, e, billid, tableId);
+                     if (userlogin.POSITION == "QUANLY" || userlogin.POSITION == "THUNGAN")
+                     {
+                         paymentEvent(sender, e, billid, tableId);
+                     }
+                     else
+                     {
+                         MessageBox.Show("Bạn không có quyền này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                     }
                  };
-
-
-
             }
         }
-
         private void paymentEvent(Object sender, EventArgs e, string billId, string tableId )
         {
             billDTO dto = new billDTO();

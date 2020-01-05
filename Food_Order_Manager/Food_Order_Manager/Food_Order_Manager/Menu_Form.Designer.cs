@@ -30,6 +30,9 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.dgv_BillDetails = new System.Windows.Forms.DataGridView();
+            this.FoodId = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantity1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Quantity_10 = new System.Windows.Forms.Button();
             this.btn_Quantity_9 = new System.Windows.Forms.Button();
             this.btn_Quantity_8 = new System.Windows.Forms.Button();
@@ -58,9 +61,6 @@
             this.btn_CancelBill = new System.Windows.Forms.Button();
             this.btn_PrintBill = new System.Windows.Forms.Button();
             this.btn_Back = new System.Windows.Forms.Button();
-            this.FoodId = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantity1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_BillDetails)).BeginInit();
             this.panel2.SuspendLayout();
@@ -114,6 +114,29 @@
             this.dgv_BillDetails.ReadOnly = true;
             this.dgv_BillDetails.Size = new System.Drawing.Size(432, 609);
             this.dgv_BillDetails.TabIndex = 31;
+            // 
+            // FoodId
+            // 
+            this.FoodId.DataPropertyName = "FoodId";
+            this.FoodId.HeaderText = "ID Món ăn";
+            this.FoodId.Name = "FoodId";
+            this.FoodId.ReadOnly = true;
+            // 
+            // Quantity1
+            // 
+            this.Quantity1.DataPropertyName = "Quantity";
+            this.Quantity1.HeaderText = "Số lượng";
+            this.Quantity1.Name = "Quantity1";
+            this.Quantity1.ReadOnly = true;
+            this.Quantity1.Width = 80;
+            // 
+            // Price
+            // 
+            this.Price.DataPropertyName = "Cost";
+            this.Price.HeaderText = "Giá tiền";
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
+            this.Price.Width = 120;
             // 
             // btn_Quantity_10
             // 
@@ -424,29 +447,6 @@
             this.btn_Back.UseVisualStyleBackColor = false;
             this.btn_Back.Click += new System.EventHandler(this.btn_Exit_Click);
             // 
-            // FoodId
-            // 
-            this.FoodId.DataPropertyName = "FoodId";
-            this.FoodId.HeaderText = "ID Món ăn";
-            this.FoodId.Name = "FoodId";
-            this.FoodId.ReadOnly = true;
-            // 
-            // Quantity1
-            // 
-            this.Quantity1.DataPropertyName = "Quantity";
-            this.Quantity1.HeaderText = "Số lượng";
-            this.Quantity1.Name = "Quantity1";
-            this.Quantity1.ReadOnly = true;
-            this.Quantity1.Width = 80;
-            // 
-            // Price
-            // 
-            this.Price.DataPropertyName = "Cost";
-            this.Price.HeaderText = "Giá tiền";
-            this.Price.Name = "Price";
-            this.Price.ReadOnly = true;
-            this.Price.Width = 120;
-            // 
             // Menu_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -454,6 +454,7 @@
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.SkyBlue;
             this.ClientSize = new System.Drawing.Size(1800, 863);
+            this.ControlBox = false;
             this.Controls.Add(this.btn_Back);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.btn_PrintBill);

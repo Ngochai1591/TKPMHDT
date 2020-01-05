@@ -40,18 +40,20 @@
             // 
             // flp_tableList
             // 
-            this.flp_tableList.Location = new System.Drawing.Point(3, 201);
+            this.flp_tableList.Location = new System.Drawing.Point(4, 247);
+            this.flp_tableList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.flp_tableList.Name = "flp_tableList";
-            this.flp_tableList.Size = new System.Drawing.Size(1344, 498);
+            this.flp_tableList.Size = new System.Drawing.Size(1792, 613);
             this.flp_tableList.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(1060, 15);
+            this.label1.Location = new System.Drawing.Point(1413, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 25);
+            this.label1.Size = new System.Drawing.Size(144, 31);
             this.label1.TabIndex = 2;
             this.label1.Text = "Xin chào: ";
             // 
@@ -59,18 +61,20 @@
             // 
             this.lb_Name.AutoSize = true;
             this.lb_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lb_Name.Location = new System.Drawing.Point(1175, 15);
+            this.lb_Name.Location = new System.Drawing.Point(1567, 18);
+            this.lb_Name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_Name.Name = "lb_Name";
-            this.lb_Name.Size = new System.Drawing.Size(155, 25);
+            this.lb_Name.Size = new System.Drawing.Size(189, 31);
             this.lb_Name.TabIndex = 3;
             this.lb_Name.Text = "tên nhân viên";
             // 
             // btn_Logout
             // 
             this.btn_Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Logout.Location = new System.Drawing.Point(1163, 55);
+            this.btn_Logout.Location = new System.Drawing.Point(1551, 68);
+            this.btn_Logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btn_Logout.Name = "btn_Logout";
-            this.btn_Logout.Size = new System.Drawing.Size(167, 94);
+            this.btn_Logout.Size = new System.Drawing.Size(223, 116);
             this.btn_Logout.TabIndex = 4;
             this.btn_Logout.Text = "Đăng xuất";
             this.btn_Logout.UseVisualStyleBackColor = true;
@@ -78,14 +82,17 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.AutoSize = true;
             this.groupBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.groupBox1.Controls.Add(this.pos1);
             this.groupBox1.Controls.Add(this.btn_Logout);
             this.groupBox1.Controls.Add(this.lb_Name);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Location = new System.Drawing.Point(3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(4, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1344, 181);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(1804, 227);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
@@ -93,20 +100,24 @@
             // 
             // pos1
             // 
-            this.pos1.Location = new System.Drawing.Point(6, 15);
+            this.pos1.Location = new System.Drawing.Point(8, 18);
+            this.pos1.Margin = new System.Windows.Forms.Padding(5);
             this.pos1.Name = "pos1";
-            this.pos1.Size = new System.Drawing.Size(150, 150);
+            this.pos1.Size = new System.Drawing.Size(200, 185);
             this.pos1.TabIndex = 0;
             // 
             // Table_Form
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(1350, 711);
+            this.ClientSize = new System.Drawing.Size(1800, 875);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.flp_tableList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Table_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Table_Form";
@@ -114,6 +125,7 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

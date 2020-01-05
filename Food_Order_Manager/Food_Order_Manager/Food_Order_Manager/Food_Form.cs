@@ -154,5 +154,10 @@ namespace Food_Order_Manager
             }
 
         }
+
+        private void btn_Cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
