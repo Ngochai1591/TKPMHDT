@@ -83,5 +83,10 @@ namespace Food_Order_Manager
         {
 
         }
+
+        private void pos1_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

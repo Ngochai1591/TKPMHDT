@@ -175,3 +175,4 @@ C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.Category.resources
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.userControl.Food.resources
 C:\Users\Admin\Desktop\New folder\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Manage_Form.resources
+C:\Users\ASUS\Documents\GitHub\TKPMHDT\Food_Order_Manager\Food_Order_Manager\Food_Order_Manager\obj\Debug\Food_Order_Manager.Manage_Form.resources

@@ -41,7 +41,7 @@
             // flp_tableList
             // 
             this.flp_tableList.Location = new System.Drawing.Point(4, 247);
-            this.flp_tableList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flp_tableList.Margin = new System.Windows.Forms.Padding(4);
             this.flp_tableList.Name = "flp_tableList";
             this.flp_tableList.Size = new System.Drawing.Size(1792, 613);
             this.flp_tableList.TabIndex = 1;
@@ -72,7 +72,7 @@
             // 
             this.btn_Logout.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Logout.Location = new System.Drawing.Point(1551, 68);
-            this.btn_Logout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Logout.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Logout.Name = "btn_Logout";
             this.btn_Logout.Size = new System.Drawing.Size(223, 116);
             this.btn_Logout.TabIndex = 4;
@@ -89,9 +89,9 @@
             this.groupBox1.Controls.Add(this.lb_Name);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(4, 2);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(1804, 227);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
@@ -105,6 +105,7 @@
             this.pos1.Name = "pos1";
             this.pos1.Size = new System.Drawing.Size(200, 185);
             this.pos1.TabIndex = 0;
+            this.pos1.Load += new System.EventHandler(this.pos1_Load);
             // 
             // Table_Form
             // 
@@ -117,7 +118,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.flp_tableList);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Table_Form";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Table_Form";
